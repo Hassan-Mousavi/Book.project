@@ -7,1453 +7,289 @@
     <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
-    <section class="header">
-      <header class="header-top">
-        <nav class="nav sticky">
-          <!-- »Logo -->
-          <img src="" alt="Logo" />
-          <!-- Search -->
-          <div class="nav-search">
-            <img
-              class="search-icon"
-              src="images/icons/search-line-icon.svg"
-              alt="search-icon"
-            />
-            <input
-              class="nav-search-input"
-              type="text"
-              placeholder="کتاب خود را جستوجو کنید..."
-            />
+    <header class="header">
+      <div class="header-content">
+        <img src="" alt="Logo" class="header-logo" />
+        <input type="text" placeholder="به دنبال چه میگردی؟" />
+        <div class="vorod">
+          <div class="vorod-login">
+            <a href="#" class="vorod-login_text">ورود</a>
+            <!-- vorodLogin Icon -->
           </div>
-          <!-- Login And Basket -->
-          <div class="vorod">
-            <!-- Login link -->
-            <a href="#" class="vorod-login">
-              <img
-                class="Login-icon"
-                src="images/icons/young-businessman-icon.svg"
-                alt="Logo-icon"
-              />
-              <p class="vorod-text">ثبت نام / ورود</p>
-            </a>
-            <!-- Basket link -->
-            <a class="vorod-basket" href="#">
-              <img
-                src="images/icons/cart-line-icon.svg"
-                alt="Basket-icon"
-                class="Basket-icon"
-              />
-              <p class="Basket-text">سبد خرید</p>
-              <input min="1" max="99" class="Basket-input" type="number" />
-            </a>
+          <div class="vorod-sign">
+            <a href="#" class="vorod-sign_text">ثبت نام</a>
+            <!-- vorodSignIcon -->
           </div>
-        </nav>
-      </header>
-    </section>
-    <main>
-      <div class="container">
-        <section class="baner">
-          <ul class="slides">
-            <input type="radio" name="radio-btn" id="img-1" checked />
-            <li class="slide-container">
-              <div class="slide">
-                <img src="images/img/book (1).jpg" />
-              </div>
-
-              <div class="arrow">
-                <label for="img-3" class="prev">&#x2039;</label>
-                <label for="img-2" class="next">&#x203a;</label>
-              </div>
-            </li>
-
-            <input type="radio" name="radio-btn" id="img-2" />
-            <li class="slide-container">
-              <div class="slide">
-                <img src="images/img/c u r i o u s.jpg" />
-              </div>
-
-              <div class="arrow">
-                <label for="img-1" class="prev">&#x2039;</label>
-                <label for="img-3" class="next">&#x203a;</label>
-              </div>
-            </li>
-
-            <input type="radio" name="radio-btn" id="img-3" />
-            <li class="slide-container">
-              <div class="slide">
-                <img
-                  src="images/img/robot studying learning through reading.jpg"
-                />
-              </div>
-              <div class="arrow">
-                <label for="img-2" class="prev">&#x2039;</label>
-                <label for="img-1" class="next">&#x203a;</label>
-              </div>
-            </li>
-            <li class="nav-dots">
-              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-            </li>
-          </ul>
-        </section>
-
-        <section class="sort">
-          <ul class="sort-list">
-            <li class="sort-item">
-              <a class="sort-link" href="#most-view"> پربازدید ترین </a>
-            </li>
-
-            <li class="sort-item">
-              <a class="sort-link" href="#"> پرفروش ترین </a>
-            </li>
-
-            <li class="sort-item">
-              <a class="sort-link" href="#product">محصولات</a>
-            </li>
-
-            <li class="sort-item">
-              <a class="sort-link" href="#"> محبوب ترین </a>
-            </li>
-
-            <li class="sort-item">
-              <a class="sort-link" href="#newest"> جدید ترین </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="most-view" id="most-view">
-          <div class="most-view-top">
-            <h3>پربازدیدترین</h3>
-            <a class="see-more" href="#"
-              >مشاهده همه<img
-                class="see-more-icon"
-                src="images/icons/reply-all-arrow-icon.svg"
-                alt=""
-            /></a>
-          </div>
-          <div class="most-view-cards">
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img src="images/img/book (1).jpg" alt="book1" class="card-img" />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب 48 قانون قدرت</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/22 Best Audiobooks for Family Road Trips.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب باشگاه 5 صبحی ها</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/robot studying learning through reading.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">
-                  کتاب چه کسی پنیر مرا جابه جا کرده است
-                </h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="product" id="product">
-          <div class="product-top">
-            <h3>محصولات</h3>
-            <a class="see-more" href="#"
-              >مشاهده همه<img
-                class="see-more-icon"
-                src="images/icons/reply-all-arrow-icon.svg"
-                alt=""
-            /></a>
-          </div>
-          <div class="product-part">
-            <a href="#" class="right-link">
-              <div class="product-right">
-                <div class="product-right-details">
-                  <h2 class="product-header">پلنر vip تسو</h2>
-                  <ul class="product-list">
-                    <li>سالیانه</li>
-                    <li>ماهانه</li>
-                    <li>هفتگی</li>
-                    <li>روزانه</li>
-                  </ul>
-                </div>
-                <img
-                  class="right-image"
-                  src="images/img/robot studying learning through reading.jpg"
-                  alt="Planer note book"
-                />
-              </div>
-            </a>
-            <div class="product-left">
-              <div class="product-left-details">
-                <h2 class="product-header">پادکست های انگیزشی</h2>
-                <ul class="product-list">
-                  <li>موفقیت فردی</li>
-                  <li>اعتماد به نفس</li>
-                  <li>کسب درامد</li>
-                </ul>
-              </div>
-              <img
-                class="left-image"
-                src="images/img/c u r i o u s.jpg"
-                alt="podcast"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section class="newest" id="newest">
-          <div class="newest-top">
-            <h3>جدید ترین</h3>
-            <a class="see-more" href="#"
-              >مشاهده همه<img
-                class="see-more-icon"
-                src="images/icons/reply-all-arrow-icon.svg"
-                alt="see all"
-            /></a>
-          </div>
-          <div class="newest-cards">
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img src="images/img/book (1).jpg" alt="book1" class="card-img" />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب 48 قانون قدرت</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/22 Best Audiobooks for Family Road Trips.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب باشگاه 5 صبحی ها</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/robot studying learning through reading.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">
-                  کتاب چه کسی پنیر مرا جابه جا کرده است
-                </h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="most-sale" id="sale">
-          <div class="newest-top">
-            <h3>پرفروش ترین ها</h3>
-            <a class="see-more" href="#"
-              >مشاهده همه<img
-                class="see-more-icon"
-                src="images/icons/reply-all-arrow-icon.svg"
-                alt="see all"
-            /></a>
-          </div>
-          <div class="newest-cards">
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img src="images/img/book (1).jpg" alt="book1" class="card-img" />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب 48 قانون قدرت</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/22 Best Audiobooks for Family Road Trips.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب باشگاه 5 صبحی ها</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/robot studying learning through reading.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">
-                  کتاب چه کسی پنیر مرا جابه جا کرده است
-                </h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="most-popular" id="popular">
-          <div class="newest-top">
-            <h3>محبوب ترین ها</h3>
-            <a class="see-more" href="#"
-              >مشاهده همه<img
-                class="see-more-icon"
-                src="images/icons/reply-all-arrow-icon.svg"
-                alt="see all"
-            /></a>
-          </div>
-          <div class="newest-cards">
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img src="images/img/book (1).jpg" alt="book1" class="card-img" />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب 48 قانون قدرت</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/22 Best Audiobooks for Family Road Trips.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب باشگاه 5 صبحی ها</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/robot studying learning through reading.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">
-                  کتاب چه کسی پنیر مرا جابه جا کرده است
-                </h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="podcast" id="podcast">
-          <div class="newest-top">
-            <h3>پادکست ها</h3>
-            <a class="see-more" href="#"
-              >مشاهده همه<img
-                class="see-more-icon"
-                src="images/icons/reply-all-arrow-icon.svg"
-                alt="see all"
-            /></a>
-          </div>
-          <div class="newest-cards">
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img src="images/img/book (1).jpg" alt="book1" class="card-img" />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب 48 قانون قدرت</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/22 Best Audiobooks for Family Road Trips.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب باشگاه 5 صبحی ها</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/robot studying learning through reading.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">
-                  کتاب چه کسی پنیر مرا جابه جا کرده است
-                </h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-            <a class="card-link" href="#">
-              <img
-                src="images/img/c u r i o u s.jpg"
-                alt="book1"
-                class="card-img"
-              />
-              <div class="card-deteils">
-                <h4 class="card-book-name">کتاب جومونگ</h4>
-                <div class="card-offer">
-                  <p class="card-book-priceoff">
-                    100,000 تومان
-                    <span> 20 <b>% </b></span>
-                  </p>
-                  <p class="card-book-price">80,000 <span>تومان</span></p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="advantages">
-          <div class="box-1 box">
-            <img
-              class="pardakht-icon"
-              src="images/icons/endorsement-icon.svg"
-              alt="pardakht"
-            />
-            <h2 class="advantage-text">پرداخت امن از درگاه بانکی</h2>
-          </div>
-          <div class="box-2 box">
-            <img
-              class="pardakht-icon"
-              src="images/icons/financial-services-icon.svg"
-              alt="pardakht"
-            />
-            <h2 class="advantage-text">تضمین کیفیت کالا</h2>
-          </div>
-          <div class="box-3 box">
-            <img
-              class="pardakht-icon"
-              src="images/icons/delivery-truck-icon.svg"
-              alt="pardakht"
-            />
-            <h2 class="advantage-text">ارسال به تمام نقاط کشور</h2>
-          </div>
-          <div class="box-4 box">
-            <img
-              class="pardakht-icon"
-              src="images/icons/endorsement-icon.svg"
-              alt="pardakht"
-            />
-            <h2 class="advantage-text">پرداخت امن از درگاه بانکی</h2>
-          </div>
-        </section>
+        </div>
       </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#">صفحه اصلی</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#">انگیزشی</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#">محصولات</a>
+          </li>
+          <li class="nav-list_item">
+            <a class="nav-list_link" href="#">درباره ما</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-img">
+        <div class="hero-details">
+          <h1 class="hero-title">کتاب های انگیزشی خود را از ما بخواهید</h1>
+          <p class="hero-caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            aperiam vitae debitis, labore nam nostrum.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="most-view">
+        <div class="container">
+          <h2 class="most-view_title">پر بازدید ترین ها</h2>
+          <div class="product-slider">
+            <div class="slide slide-1">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-1.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص super C</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-2">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-2.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص Vitamin K2</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-3">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-3.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص Airborne</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-4">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-4.jpeg"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص Vitamin D3</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-5">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-5.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص Goli</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-6">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-6.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">کرم Desitin</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-7">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-7.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">کرم GOLDBOND</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-8">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-5.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص super C</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-9">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-1.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص super C</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-10">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-3.webp"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص super C</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide slide-11">
+              <div class="product-card">
+                <img
+                  class="product-card_img"
+                  src="images/pic-4.jpeg"
+                  alt="product-1"
+                />
+                <div class="product-card_detail">
+                  <h3 class="product-card_title">قرص super C</h3>
+                  <div class="product-card_price">
+                    <p>50,000 تومان</p>
+                    <span>
+                      <del>60,000 تومان</del>
+                    </span>
+                  </div>
+                  <a href="#" class="product-card_link">
+                    <button class="product-card_btn">افزودن به سبد</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <hr />
     <div class="container">
