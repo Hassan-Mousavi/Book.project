@@ -136,6 +136,47 @@ body {
 .hero-caption {
   color: #104911;
 }
+/* mini banners */
+.mini-banners {
+  margin-bottom: 5rem;
+}
+.banners-title {
+  position: relative;
+  color: #09814a;
+  background-color: #8bc78b;
+  margin-bottom: 1.5rem;
+  margin-right: 3rem;
+  padding: 1rem 1.5rem;
+  width: 30rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.banners-title::before {
+  display: inline-block;
+  content: "";
+  width: 2rem;
+  height: 0.3rem;
+  background-color: #8bc78b;
+  position: absolute;
+  top: 2.3rem;
+  right: -2.5rem;
+}
+.banners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mini-banner {
+  width: 45rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 /* slider */
 .product-slider {
   max-width: 100%;
@@ -160,7 +201,7 @@ body {
   top: 45%;
   z-index: 10;
   border: none;
-  background: #99dee1;
+  background: #1c8757;
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -188,8 +229,8 @@ body {
   margin-bottom: 2rem;
   margin-right: 3rem;
   position: relative;
-  color: #2e777a;
-  background-color: #99dee1;
+  color: #1c8757;
+  background-color: #8bc78b;
   width: 23rem;
   padding: 1rem;
   border-radius: 15px;
@@ -203,7 +244,7 @@ body {
   content: "";
   width: 2rem;
   height: 0.3rem;
-  background-color: #66ced1;
+  background-color: #8bc78b;
   position: absolute;
   top: 2.3rem;
   right: -2.5rem;
