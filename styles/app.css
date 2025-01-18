@@ -13,7 +13,7 @@ body {
   font-family: "Times New Roman";
 }
 .container {
-  width: 100%;
+  width: 127rem;
   padding: 0 1.5rem 0 1.5rem;
   margin: 0 auto;
   position: relative;
@@ -22,7 +22,7 @@ body {
 }
 /* header */
 .header {
-  background-color: #09814a;
+  background-color: #a79277;
   margin-bottom: 5rem;
 }
 .header-content {
@@ -51,13 +51,13 @@ body {
 .vorod-login_text,
 .vorod-sign_text {
   text-decoration: none;
-  color: #104911;
+  color: #fff2e1;
   font-weight: 700;
   padding: 1rem 2rem;
 }
 .vorod-login_text:hover {
-  color: #09814a;
-  background-color: #fff;
+  color: #a79277;
+  background-color: #ead8c0;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -65,8 +65,8 @@ body {
   -o-border-radius: 15px;
 }
 .vorod-sign_text:hover {
-  color: #09814a;
-  background-color: #fff;
+  color: #a79277;
+  background-color: #ead8c0;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -76,7 +76,7 @@ body {
 .nav {
   margin-top: 1rem;
   padding: 2rem 3rem;
-  background-color: #1c8757;
+  background-color: #d1bb9e;
 }
 .nav-list {
   display: flex;
@@ -93,8 +93,8 @@ body {
   margin-right: 0;
 }
 .nav-list_item:hover {
-  background-color: aliceblue;
-  color: #569d56;
+  background-color: #ead8c0;
+  color: #a79277;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -104,18 +104,18 @@ body {
 .nav-list_link {
   display: inline-block;
   text-decoration: none;
-  color: #104911;
+  color: #fff2e1;
   padding: 1rem 2rem;
 }
 .nav-list_link:hover {
-  color: #09814a;
+  color: #a79277;
 }
 .hero-img {
   position: relative;
   background: linear-gradient(
-      270deg,
-      rgba(16, 73, 17, 0.703),
-      rgba(9, 129, 75, 0.267)
+      90deg,
+      rgba(167, 146, 119, 0.8),
+      rgba(209, 187, 158, 0.3)
     ),
     url(/images/img/beautiful-arrangement-different-books.jpg);
   background-repeat: no-repeat;
@@ -131,10 +131,13 @@ body {
 .hero-title {
   margin-bottom: 3rem;
   font-size: 5rem;
-  color: #104911;
+  color: #fff2e1;
+  /* text-shadow: 0 0 3px #fff2e1; */
 }
 .hero-caption {
-  color: #104911;
+  font-size: 2rem;
+  color: #fff2e1;
+  /* text-shadow: 0 0 3px #fff2e1; */
 }
 /* mini banners */
 .mini-banners {
@@ -142,8 +145,8 @@ body {
 }
 .banners-title {
   position: relative;
-  color: #09814a;
-  background-color: #8bc78b;
+  color: #fff2e1;
+  background-color: #a79277;
   margin-bottom: 1.5rem;
   margin-right: 3rem;
   padding: 1rem 1.5rem;
@@ -159,7 +162,7 @@ body {
   content: "";
   width: 2rem;
   height: 0.3rem;
-  background-color: #8bc78b;
+  background-color: #a79277;
   position: absolute;
   top: 2.3rem;
   right: -2.5rem;
@@ -170,7 +173,7 @@ body {
   align-items: center;
 }
 .mini-banner {
-  width: 45rem;
+  width: 39rem;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -201,7 +204,7 @@ body {
   top: 45%;
   z-index: 10;
   border: none;
-  background: #1c8757;
+  background: #a79277;
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -229,8 +232,8 @@ body {
   margin-bottom: 2rem;
   margin-right: 3rem;
   position: relative;
-  color: #1c8757;
-  background-color: #8bc78b;
+  color: #fff2e1;
+  background-color: #a79277;
   width: 23rem;
   padding: 1rem;
   border-radius: 15px;
@@ -244,59 +247,78 @@ body {
   content: "";
   width: 2rem;
   height: 0.3rem;
-  background-color: #8bc78b;
+  background-color: #a79277;
   position: absolute;
   top: 2.3rem;
   right: -2.5rem;
 }
 .product-card {
   position: relative;
-  border: 2px solid #2e777a;
+  border: 2px solid #d1bb9e;
   border-radius: 15px;
   width: 23.97rem;
-  height: 43rem;
+  height: 40rem;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   margin-right: 1rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.product-card:hover {
+  background-color: rgba(255, 242, 225, 0.326);
+  border-radius: 2px solid #a79277;
+  -webkit-border-radius: 2px solid #a79277;
+  -moz-border-radius: 2px solid #a79277;
+  -ms-border-radius: 2px solid #a79277;
+  -o-border-radius: 2px solid #a79277;
+}
+.product-card:hover .product-card_icon {
+  background-color: #a79277;
+  fill: #fff2e1;
 }
 .product-card_img {
   width: 25rem;
   height: 23rem;
-  padding: 1rem;
   object-fit: contain;
+  padding-top: 1rem;
 }
 .product-card_detail {
   padding: 1.5rem;
+  padding-top: 0.5rem;
 }
 .product-card_title {
   text-align: center;
-  margin-bottom: 5rem;
-  color: #00adb3;
-  background-color: #cceff0;
+  margin-bottom: 3rem;
+  color: #a79277;
 }
 .product-card_price p {
   margin-bottom: 1rem;
-  color: #2e777a;
+  color: #a79277;
+  font-weight: bold;
 }
 .product-card_price span {
-  color: #66ced1;
+  color: #d1bb9e;
 }
-.product-card_btn {
-  border: none;
-  background-color: #00adb3;
-  width: 100%;
+.product-card_icon {
+  width: 3.5rem;
   height: 3.5rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #cceff0;
-  cursor: pointer;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background-color: #ead8c0;
+  margin-right: 16rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 /* advantages */
