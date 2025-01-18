@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,8 +19,9 @@ html {
 }
 .login {
   width: 31rem;
-  box-shadow: 0 0 7px #bdb4b4;
-  height: 50rem;
+  box-shadow: 0 0 7px #a79277;
+  height: 56rem;
+  border-radius: 1.5rem;
 }
 .wrap {
   width: 35rem;
@@ -31,69 +31,76 @@ html {
   width: 31rem;
   height: 14rem;
   margin: 0 auto;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 .login-part {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1.5rem;
 }
-.login-detail{
-    margin-bottom: 2.5rem;
-    text-align: center;
-    font-size: 32px;
+.login-detail {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 32px;
+  color: #a79277;
+}
+.user_lab,
+.pass_lab {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #a79277;
 }
 .input-username {
   margin-bottom: 1rem;
   width: 100%;
   padding: 0.7rem;
-
- 
 }
 .input-username-p1 {
   width: 100%;
   height: 3.5rem;
   border-radius: 0.4rem;
-  padding-right: 0.8rem;
+  outline: none;
   border: none;
-  box-shadow: 0 0 5px  gray;
+  box-shadow: 0 0 5px #a79277;
+  padding-right: 0.5rem;
 }
 .input-password {
   margin-bottom: 1rem;
   width: 100%;
-  padding: 0.7rem;
 }
 .input-password-p2 {
   width: 100%;
   height: 3.5rem;
   border-radius: 0.4rem;
-  padding-right: 0.8rem;
+  padding-right: 0.5rem;
   border: none;
-  box-shadow: 0 0 5px  gray;
+  outline: none;
+  box-shadow: 0 0 5px #a79277;
 }
 .input-submit {
   margin-bottom: 1rem;
   width: 100%;
   padding: 0 0.7rem;
-  
-  
 }
-.submit{
+.submit {
   width: 100%;
-  background-color: #569d56;
+  background-color: #a79277;
   height: 3.5rem;
   border-radius: 0.4rem;
-  color: #fff;
-  font-weight:bold;
+  color: #ead8c0;
+  font-weight: 700;
   border: none;
-  box-shadow: 0 0 5px  gray;
+  box-shadow: 0 0 5px #a79277;
 }
-.submit:active{
-    background-color: #fff;
-    color: #569d56;
-   
+.submit:hover {
+  background-color: #ead8c0;
+  color: #fff2e1;
+  font-weight: 700;
 }
-.Enter{
-    text-decoration: none;
+.Enter {
+  text-decoration: none;
 }
 
 .slice {
@@ -116,16 +123,15 @@ html {
   text-decoration: none;
   font-size: 14px;
 }
-.right-part-text{
-    text-decoration: none;
-    font-size: 14px;
-    color: #569d56;
+.right-part-text {
+  text-decoration: none;
+  font-size: 14px;
+  color: #a79277;
 }
 .checkbox-1 {
   justify-content: center;
   align-items: center;
   margin-right: 4.5rem;
-  fill: #569d56;
 }
 .reg {
   display: flex;
@@ -135,146 +141,7 @@ html {
   font-size: 14px;
 }
 
-.signin-link-click{
-    text-decoration: none;
-=======
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-size: 10px;
-}
-
-.container {
-  width: 30rem;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3rem;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.login {
-  width: 31rem;
-  box-shadow: 0 0 7px #bdb4b4;
-  height: 50rem;
-}
-.wrap {
-  width: 35rem;
-}
-.img {
-  display: inline-block;
-  width: 31rem;
-  height: 14rem;
-  margin: 0 auto;
-}
-.login-part {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1.5rem;
-}
-.login-detail{
-    margin-bottom: 2.5rem;
-    text-align: center;
-    font-size: 32px;
-}
-.input-username {
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 0.7rem;
-
- 
-}
-.input-username-p1 {
-  width: 100%;
-  height: 3.5rem;
-  border-radius: 0.4rem;
-  padding-right: 0.8rem;
-  border: none;
-  box-shadow: 0 0 5px  gray;
-}
-.input-password {
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 0.7rem;
-}
-.input-password-p2 {
-  width: 100%;
-  height: 3.5rem;
-  border-radius: 0.4rem;
-  padding-right: 0.8rem;
-  border: none;
-  box-shadow: 0 0 5px  gray;
-}
-.input-submit {
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 0 0.7rem;
-  
-  
-}
-.submit{
-  width: 100%;
-  background-color: #569d56;
-  height: 3.5rem;
-  border-radius: 0.4rem;
-  color: #fff;
-  font-weight:bold;
-  border: none;
-  box-shadow: 0 0 5px  gray;
-}
-.submit:active{
-    background-color: #fff;
-    color: #569d56;
-   
-}
-.Enter{
-    text-decoration: none;
-}
-
-.slice {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.right {
-  justify-content: center;
-  align-items: center;
-}
-
-.left-part {
-  display: flex;
-  margin-left: 0.5rem;
-}
-.left-part-text {
-  margin-right: 0.5rem;
+.signin-link-click {
   text-decoration: none;
-  font-size: 14px;
-}
-.right-part-text{
-    text-decoration: none;
-    font-size: 14px;
-    color: #569d56;
-}
-.checkbox-1 {
-  justify-content: center;
-  align-items: center;
-  margin-right: 4.5rem;
-  fill: #569d56;
-}
-.reg {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.signin-link-click{
-    text-decoration: none;
->>>>>>> 75e57489683cd9394f3f1ba33a142b0e0b24b9e1
+  color: #a79277;
 }
