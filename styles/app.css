@@ -180,6 +180,13 @@ body {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+.mini-banner:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
 /* slider */
 .product-slider {
   max-width: 100%;
@@ -199,19 +206,24 @@ body {
   /* THIS creates the animation! */
   transition: transform 1s;
 }
-.slider__btn {
+.slider__btn,
+.slider_btn {
   position: absolute;
-  top: 45%;
+  top: 40%;
   z-index: 10;
   border: none;
-  background: #a79277;
   font-family: inherit;
-  color: #333;
+  background-color: #a79277;
+  color: #fff2e1;
   border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
   font-size: 3.25rem;
   cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .slider__btn--left {
@@ -223,11 +235,42 @@ body {
   right: 3%;
   transform: translate(50%, -50%);
 }
+/* second slider */
+/* slider_1 */
+.product-slider {
+  max-width: 100%;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+}
+.slide_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 43rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider_btn--left {
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+
+.slider_btn--right {
+  right: 3%;
+  transform: translate(50%, -50%);
+}
 /* product-slider */
 .most-view {
   margin-bottom: 8rem;
 }
-.most-view_title {
+.most-view_title,
+.most-sale_title {
   text-align: center;
   margin-bottom: 2rem;
   margin-right: 3rem;
@@ -242,7 +285,8 @@ body {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-.most-view_title::before {
+.most-view_title::before,
+.most-sale_title::before {
   display: inline-block;
   content: "";
   width: 2rem;
@@ -281,8 +325,15 @@ body {
   background-color: #a79277;
   fill: #fff2e1;
 }
+.product-card:hover .product-card_img {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
 .product-card_img {
-  width: 25rem;
+  width: 24rem;
   height: 23rem;
   object-fit: contain;
   padding-top: 1rem;
