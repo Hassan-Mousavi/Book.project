@@ -372,78 +372,61 @@ body {
   -o-transition: all 0.3s ease;
 }
 
-/* advantages */
-.advantages {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8rem;
-}
-.box {
-  display: flex;
-  align-items: center;
-  width: 21rem;
-  height: 10rem;
-  border: 1px solid black;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-.pardakht-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-left: 1rem;
-}
-.advantage-text {
-  font-size: 1.8rem;
-}
 /* footer */
 .footer {
-  margin-bottom: 8rem;
-  margin-top: 5rem;
+  background-color: #a79277;
+}
+.entire-footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-.footer_box1,
-.footer_box2,
-.footer_box3,
-.footer_box4 {
-  width: 21rem;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 1rem;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+/* part1 */
+.footer-p1 {
+  width: 15rem;
 }
-.footer_header {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+
+/* part2 */
+.footer-p2 {
+  width: 75rem;
 }
-.footer_list {
+.footer-title {
+  color: #fff2e1;
+}
+.footer-caption {
+  color: #ead8c0;
+}
+.footer-address {
+  display: flex;
+  background-color: #fff2e1;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 1rem 0.5rem;
+}
+.address-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+.address-title {
+  color: #a79277;
+}
+.address-caption {
+  color: #d1bb9e;
+}
+.footer-khadamat {
+  display: flex;
+  justify-content: space-between;
+}
+.khadamat-title {
+  color: #fff2e1;
+}
+.list-1 {
   list-style-type: none;
 }
-.footer_item {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.footer_link {
+.list-1 a {
   text-decoration: none;
-  color: #000;
-}
-.footer_contact {
-  text-decoration: none;
-}
-.footer-icon {
-  width: 3rem;
-  height: 3rem;
+  color: #ead8c0;
 }
