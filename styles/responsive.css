@@ -1,0 +1,108 @@
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .hero-details {
+    left: 5rem;
+    width: 60rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  .header-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .header-content input {
+    width: 100%;
+    order: 3;
+  }
+  .nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .hero-img {
+    height: 40rem;
+    background-size: cover;
+  }
+  .hero-details {
+    width: 90%;
+    left: 5%;
+    text-align: center;
+  }
+  .banners {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mini-banner {
+    width: 100%;
+  }
+  .product-slider {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .slide,
+  .slide_1 {
+    position: relative;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .slider__btn,
+  .slider_btn {
+    display: none;
+  }
+  .product-card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .entire-footer {
+    flex-direction: column;
+  }
+  .footer-p2 {
+    width: 100%;
+    padding: 2rem;
+  }
+  .footer-p3 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .footer-copyRight p {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .product-card_img {
+    width: 100%;
+    height: auto;
+  }
+  .product-card_icon {
+    margin-right: 0;
+    float: left;
+  }
+  .khadamat-p3 {
+    flex-direction: column;
+  }
+  .contact-phone_number,
+  .contact-telphone_number {
+    font-size: 2rem;
+  }
+}
