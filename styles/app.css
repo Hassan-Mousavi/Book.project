@@ -43,6 +43,21 @@ body {
   padding-right: 1rem;
   font-size: 2rem;
 }
+.search {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.search-icon {
+  background-color: #fff;
+  height: 5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  fill: #a79277;
+}
 .vorod {
   display: flex;
   align-items: center;
@@ -53,7 +68,7 @@ body {
   text-decoration: none;
   color: #fff2e1;
   font-weight: 700;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 .vorod-login_text:hover {
   color: #a79277;
@@ -72,6 +87,16 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+.vorod-sign,
+.vorod-login {
+  display: flex;
+  align-items: center;
+}
+.vorod-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff2e1;
 }
 .nav {
   margin-top: 1rem;
@@ -449,6 +474,14 @@ body {
   align-items: center;
   gap: 2.5rem;
 }
+.khadamat-p3 div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.khadamat-p3 p {
+  color: #fff2e1;
+}
 /* part3 */
 .footer-p3 {
   height: 54rem;
@@ -515,4 +548,10 @@ body {
   margin-right: 15rem;
   font-size: 2rem;
   font-weight: 700;
+}
+.khadamat-icon {
+  width: 4rem;
+  height: 4rem;
+  fill: #fff2e1;
+  margin-left: 1rem;
 }

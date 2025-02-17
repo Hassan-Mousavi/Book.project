@@ -73,8 +73,8 @@ const prevSlide_1 = function () {
 const init_1 = function () {
   goToSlide_1(0);
 };
-// setInterval(() => nextSlide(curSlide), 4000);
-// setInterval(() => nextSlide_1(curSlide_1), 4000);
+setInterval(() => nextSlide(curSlide), 4000);
+setInterval(() => nextSlide_1(curSlide_1), 4000);
 
 // EventHandlers new
 btnRight_1.addEventListener("click", nextSlide_1);
