@@ -1,7 +1,23 @@
+@media screen and (min-width: 1400px) {
+  .search {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .vorod-sign_text {
+    width: 7rem;
+  }
+}
 @media screen and (max-width: 1400px) {
   .container {
     width: 100%;
     padding: 0 1.5rem;
+  }
+  .search {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .vorod-sign_text {
+    width: 7rem;
   }
   .hero-details {
     left: 5rem;
@@ -30,6 +46,9 @@
   }
   .hero-details {
     width: 35rem;
+  }
+  .search {
+    width: 50%;
   }
   .product-slider {
     max-width: 75rem;
@@ -78,7 +97,7 @@
     margin-left: auto;
   }
   .header-content {
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
     padding: 2rem;
   }
@@ -107,6 +126,11 @@
   }
   .hero-title {
     font-size: 4rem;
+  }
+  .search {
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 50%;
   }
   .banners {
     flex-direction: column;
@@ -188,6 +212,12 @@
   }
   .hero-title {
     font-size: 3.5rem;
+  }
+  .header-content {
+    flex-direction: column;
+  }
+  .search {
+    width: 100%;
   }
   .product-card_img {
     width: 100%;
