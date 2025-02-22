@@ -35,8 +35,8 @@ const init = function () {
   goToSlide(0);
 };
 // EventHandlers
-btnRight.addEventListener("click", nextSlide);
-btnLeft.addEventListener("click", prevSlide);
+// btnRight.addEventListener("click", nextSlide);
+// btnLeft.addEventListener("click", prevSlide);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevSlide();
@@ -77,8 +77,8 @@ setInterval(() => nextSlide(curSlide), 4000);
 setInterval(() => nextSlide_1(curSlide_1), 4000);
 
 // EventHandlers new
-btnRight_1.addEventListener("click", nextSlide_1);
-btnLeft_1.addEventListener("click", prevSlide_1);
+// btnRight_1.addEventListener("click", nextSlide_1);
+// btnLeft_1.addEventListener("click", prevSlide_1);
 
 // smooth scroll
 // document.querySelector(".sort-list").addEventListener("click", function (e) {
@@ -89,20 +89,3 @@ btnLeft_1.addEventListener("click", prevSlide_1);
 //     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 //   }
 // });
-
-// sticky navigation
-// const nav = document.querySelector(".nav");
-// const header = document.querySelector(".header-top");
-// const navHeight = nav.getBoundingClientRect().height;
-// const stickyNav = function (entries) {
-//   const [entry] = entries;
-//   console.log(entry);
-//   if (!entry.isIntersecting) nav.classList.add("sticky");
-//   else nav.classList.remove("sticky");
-// };
-// const headerObserver = new IntersectionObserver(stickyNav, {
-//   root: null,
-//   threshold: 0,
-//   // rootMargin: `20px`,
-// });
-// headerObserver.observe(header);
