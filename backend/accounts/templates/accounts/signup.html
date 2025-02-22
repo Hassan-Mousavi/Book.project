@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>صفحه ثبت نام</title>
+    <link rel="stylesheet" href="{% static 'css/sign.css' %}"/>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <div class="container">
+            <div class="login">
+                <div class="wrap">
+                    <img class="img1" src="{% static 'image/img/creative-world-book-day-arrangement.jpg' %}" alt="book.jpg">
+                </div>
+                <div class="login-part">
+                    <div class="login-detail">ثبت نام‌ در سایت</div>
+
+                    <div class="input-username">
+                        <label class="input-username-text" for="#">نام کاربری</label>
+                        <input
+                                class="input-username-p1"
+                                type="text"
+                                name="username"
+                                placeholder="نام کاربری خود را وارد کنید"
+                                required/>
+                        {% if form.username.errors %}
+                            {% for error in form.username.errors %}
+                                <p class="text-danger">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-email">
+                        <label class="input-email-text" for="#">آدرس ایمیل</label>
+                        <input
+                                class="input-email-p1"
+                                name="email"
+                                type="text"
+                                placeholder="آدرس ایمیل خود را وارد کنید"
+                                required/>
+                        {% if form.email.errors %}
+                            {% for error in form.email.errors %}
+                                <p class="text-danger">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-password">
+                        <label class="input-password-text" for="#">رمز عبور</label>
+                        <input
+                                class="input-password-p2"
+                                name="password1"
+                                type="password"
+                                placeholder="رمز عبور خود را وارد کنید"
+                                required/>
+                        {% if form.password1.errors %}
+                            {% for error in form.password1.errors %}
+                                <p class="text-danger">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-password-repeat">
+                        <label class="input-password-repeat-text" for="#"
+                        >تکرار رمز عبور</label
+                        >
+                        <input
+                                class="input-password-p2"
+                                name="password2"
+                                type="password"
+                                placeholder="تکرار رمز عبور را وارد کنید"
+                                required/>
+                        {% if form.password2.errors %}
+                            {% for error in form.password2.errors %}
+                                <p class="text-danger">{{ error }}</p>
+                            {% endfor %}
+                        {% endif %}
+                        <br><br><br><br><br>
+                        <button type="submit">ثبت نام</button>
+
+
+                        <script src="{% static 'js/sign.js' %}"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

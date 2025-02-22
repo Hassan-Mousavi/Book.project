@@ -30,7 +30,7 @@
                 <!-- vorodLogin Icon -->
             </div>
             <div class="vorod-sign">
-                <a href="#" class="vorod-sign_text">ثبت نام</a>
+                <a href="{% url 'signup' %}" class="vorod-sign_text">ثبت نام</a>
                 <!-- vorodSignIcon -->
             </div>
         </div>
@@ -130,11 +130,11 @@
                     </div>
                     <div class="khadamat-p3">
                         <div>
-                            <img src="" alt="Tahvil"/>
+                            <img src="{% static 'image/icons/delivery-truck-icon.svg' %}" alt="Tahvil"/>
                             <p>تحویل سریع</p>
                         </div>
                         <div>
-                            <img src="" alt="zemanat"/>
+                            <img src="{% static 'image/icons/endorsement-icon.svg' %}" alt="zemanat"/>
                             <p>ضمانت بازگشت</p>
                         </div>
                     </div>
