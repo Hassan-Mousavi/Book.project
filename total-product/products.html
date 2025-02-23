@@ -261,7 +261,50 @@
           </div>
         </div>
       </section>
+      <div class="pagination">
+        <ul class="list_pagination">
+          <li class="page_item">
+            <a
+              href="#"
+              class="page_link disabled"
+              aria-label="previous"
+              onclick="changePage(currentPage-1)"
+            >
+              <span aria-hidden="true">&laquo;</span></a
+            >
+          </li>
+          <!-- page numbers -->
+          <li class="page_item active" aria-current="page">
+            <a href="#" class="page_link" onclick="changePage(1)">1</a>
+          </li>
+          <li class="page_item">
+            <a href="#" class="page_link" onclick="changePage(2)">2</a>
+          </li>
+          <li class="page_item">
+            <a href="#" class="page_link" onclick="changePage(3)">3</a>
+          </li>
+          <!-- noghte chin -->
+          <li class="page_item">
+            <span class="page_link">...</span>
+          </li>
+          <!-- last page -->
+          <li class="page_item">
+            <a href="#" class="page_link" onclick="changePage(10)">10</a>
+          </li>
+          <li class="page_item">
+            <a
+              href="#"
+              class="page_link"
+              aria-label="next"
+              onclick="changePage(currentPage+1)"
+            >
+              <span aria-hidden="true">&raquo;</span></a
+            >
+          </li>
+        </ul>
+      </div>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="entire-footer">
