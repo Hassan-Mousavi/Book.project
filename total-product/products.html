@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/products.css" />
-    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/responsive-products.css" />
     <title>products</title>
     <script defer src="../js/app.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-content">
+        <div class="header_content">
           <img src="" alt="Logo" class="header-logo" />
 
           <div class="vorod">
@@ -261,47 +261,49 @@
           </div>
         </div>
       </section>
-      <div class="pagination">
-        <ul class="list_pagination">
-          <li class="page_item">
-            <a
-              href="#"
-              class="page_link disabled"
-              aria-label="previous"
-              onclick="changePage(currentPage-1)"
-            >
-              <span aria-hidden="true">&laquo;</span></a
-            >
-          </li>
-          <!-- page numbers -->
-          <li class="page_item active" aria-current="page">
-            <a href="#" class="page_link" onclick="changePage(1)">1</a>
-          </li>
-          <li class="page_item">
-            <a href="#" class="page_link" onclick="changePage(2)">2</a>
-          </li>
-          <li class="page_item">
-            <a href="#" class="page_link" onclick="changePage(3)">3</a>
-          </li>
-          <!-- noghte chin -->
-          <li class="page_item">
-            <span class="page_link">...</span>
-          </li>
-          <!-- last page -->
-          <li class="page_item">
-            <a href="#" class="page_link" onclick="changePage(10)">10</a>
-          </li>
-          <li class="page_item">
-            <a
-              href="#"
-              class="page_link"
-              aria-label="next"
-              onclick="changePage(currentPage+1)"
-            >
-              <span aria-hidden="true">&raquo;</span></a
-            >
-          </li>
-        </ul>
+      <div class="container">
+        <div class="pagination">
+          <ul class="list_pagination">
+            <li class="page_item">
+              <a
+                href="#"
+                class="page_link disabled"
+                aria-label="previous"
+                onclick="changePage(currentPage-1)"
+              >
+                <span aria-hidden="true">&laquo;</span></a
+              >
+            </li>
+            <!-- page numbers -->
+            <li class="page_item active" aria-current="page">
+              <a href="#" class="page_link" onclick="changePage(1)">1</a>
+            </li>
+            <li class="page_item">
+              <a href="#" class="page_link" onclick="changePage(2)">2</a>
+            </li>
+            <li class="page_item">
+              <a href="#" class="page_link" onclick="changePage(3)">3</a>
+            </li>
+            <!-- noghte chin -->
+            <li class="page_item">
+              <span class="page_link">...</span>
+            </li>
+            <!-- last page -->
+            <li class="page_item">
+              <a href="#" class="page_link" onclick="changePage(10)">10</a>
+            </li>
+            <li class="page_item">
+              <a
+                href="#"
+                class="page_link"
+                aria-label="next"
+                onclick="changePage(currentPage+1)"
+              >
+                <span aria-hidden="true">&raquo;</span></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
 

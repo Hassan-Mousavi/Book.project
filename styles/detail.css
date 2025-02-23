@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  color: #0e1935;
+  font-size: 2rem;
+  background-color: #fff;
+  font-family: "Times New Roman";
+}
+.header {
+  background-color: #a79277;
+}
+.container {
+  width: 127rem;
+  padding: 0 1.5rem 0 1.5rem;
+  margin: 0 auto;
+  position: relative;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  /* background-color: #a79277; */
+}
+.header-content input {
+  height: 5rem;
+  width: 50rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  outline: none;
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10rem;
+}
+.search input {
+  text-align: right;
+}
+.search-icon {
+  background-color: #fff;
+  height: 5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  fill: #a79277;
+}
+.vorod {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.vorod-login_text,
+.vorod-sign_text {
+  text-decoration: none;
+  color: #fff2e1;
+  font-weight: 700;
+  padding: 1rem 1rem;
+}
+.vorod-login_text:hover {
+  color: #a79277;
+  background-color: #ead8c0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.vorod-sign_text:hover {
+  color: #a79277;
+  background-color: #ead8c0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.vorod-sign,
+.vorod-login {
+  display: flex;
+  align-items: center;
+}
+.vorod-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff2e1;
+}
+.nav {
+  padding: 2rem 3rem;
+  /* background-color: #a79277; */
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.nav-list_item {
+  margin-right: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  /* padding: 1rem 2rem; */
+}
+.nav-list_item:first-child {
+  margin-right: 0;
+}
+.nav-list_item:hover {
+  background-color: #ead8c0;
+  color: #a79277;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.nav-list_link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff2e1;
+  padding: 1rem 2rem;
+}
+.nav-list_link:hover {
+  color: #a79277;
+}
