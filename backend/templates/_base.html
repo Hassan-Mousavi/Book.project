@@ -9,7 +9,6 @@
 
         {% endblock title %}
     </title>
-
     <!-- ************************* CSS Files ************************* -->
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
@@ -25,20 +24,27 @@
         <img src="" alt="Logo" class="header-logo"/>
         <input type="text" placeholder="به دنبال چه میگردی؟"/>
         <div class="vorod">
-            <div class="vorod-login">
-                <a href="#" class="vorod-login_text">ورود</a>
-                <!-- vorodLogin Icon -->
-            </div>
-            <div class="vorod-sign">
-                <a href="{% url 'signup' %}" class="vorod-sign_text">ثبت نام</a>
-                <!-- vorodSignIcon -->
-            </div>
+            {% if user.is_authenticated %}
+                <div class="vorod-logout">
+                    <p>خوش آمدی {{ user.username }}</p> 
+                    <a href="{% url 'logout' %}" class="vorod-logout_text">خروج</a>
+                </div>
+            {% else %}
+                <div class="vorod-login">
+                    <a href="{% url 'login' %}" class="vorod-login_text">ورود</a>
+                    <!-- vorodLogin Icon -->
+                </div>
+                <div class="vorod-sign">
+                    <a href="{% url 'signup' %}" class="vorod-sign_text">ثبت نام</a>
+                    <!-- vorodSignIcon -->
+                </div>
+            {% endif %}
         </div>
     </div>
     <nav class="nav">
         <ul class="nav-list">
             <li class="nav-list_item">
-                <a class="nav-list_link" href="#">صفحه اصلی</a>
+                <a class="nav-list_link" href="{% url 'home' %}">صفحه اصلی</a>
             </li>
             <li class="nav-list_item">
                 <a class="nav-list_link" href="#">انگیزشی</a>
@@ -51,6 +57,15 @@
             </li>
         </ul>
     </nav>
+    {% if messages %}
+        <div class="container-fluid">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
     <div class="hero-img">
         <div class="hero-details">
             <h1 class="hero-title">کتاب های انگیزشی خود را از ما بخواهید</h1>
