@@ -135,3 +135,124 @@ body {
 .nav-list_link:hover {
   color: #a79277;
 }
+/* main */
+.details_container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 5rem;
+}
+.book_product {
+  box-shadow: 0 0 3px #a79277;
+}
+.book_img {
+  width: 100%;
+  height: 30rem;
+  padding: 2rem 3rem;
+}
+.book_list {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+.book_price {
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+}
+.book_option:first-child {
+  margin-bottom: 1rem;
+}
+.book_percent-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.price_off-container {
+  display: flex;
+  align-items: center;
+}
+.price_off-container div {
+  background-color: lightcoral;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 0.1rem;
+}
+.book_price-off {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.book_price-off::before {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  content: " ";
+  display: inline-block;
+  width: 5.5rem;
+  height: 0.2rem;
+  background-color: #777;
+}
+.book_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.book_link-btn {
+  text-align: end;
+}
+.book_link {
+  display: inline-block;
+  text-decoration: none;
+  color: #a79277;
+  border: 2px solid #ead8c0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
+.book_details {
+  padding: 0 2rem;
+}
+.book_name {
+  margin-bottom: 1rem;
+}
+.book_title {
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.book_producer-name {
+  margin-bottom: 3rem;
+}
+.book_title-details {
+  margin-bottom: 2rem;
+}
+.details_list {
+  list-style-type: none;
+}
+.details_item {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.details_item span {
+  font-weight: normal;
+}
+
+.icons_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.ad_icons {
+  width: 2.5rem;
+  height: 2.5rem;
+}
