@@ -3,6 +3,10 @@
     width: 100%;
     padding: 0 2rem;
   }
+  .book_link-btn {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   .container {
@@ -86,7 +90,7 @@
   }
   .search {
     margin-left: 0;
-    width: 50%;
+    width: 90%;
   }
   .search input {
     width: 100%;
@@ -102,10 +106,29 @@
     margin-right: 2rem;
     margin-bottom: 1rem;
   }
-  .card {
-    width: 45%;
-    margin-bottom: 2rem;
+  .details_container {
+    grid-template-columns: 1.6fr 2.4fr;
   }
+  .book_product {
+    height: 45rem;
+  }
+  .book_img {
+    height: 25rem;
+  }
+  .book_link-btn {
+    margin: 2rem 0 0 2rem;
+  }
+  .details_item:last-child {
+    text-align: justify;
+  }
+  .icons_list {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .card {
+    width: 20rem;
+  }
+
   .entire-footer {
     flex-direction: column;
   }
@@ -146,9 +169,9 @@
   html {
     font-size: 8px;
   }
-  .header-content {
+  /* .header-content {
     flex-direction: column;
-  }
+  } */
   .vorod {
     flex-direction: column;
   }
@@ -156,11 +179,20 @@
     margin-right: 1rem;
     font-size: 1.6rem;
   }
-  .card {
-    width: 90%;
+  .details_container {
+    grid-template-columns: 1fr 1fr;
   }
-  .sort_search {
-    width: 100%;
+  .book_product {
+    height: 80%;
+  }
+  .card {
+    width: 50%;
+  }
+  .comment_container {
+    grid-template-columns: 1fr 2fr;
+  }
+  .comment_btn {
+    width: 15rem;
   }
   .footer-p1 {
     width: 100%;
