@@ -96,7 +96,7 @@
     width: 100%;
   }
   .nav {
-    display: none;
+    box-shadow: 0 0 5px #fff2e1;
   }
   .nav-list {
     flex-wrap: wrap;
@@ -163,6 +163,19 @@
   .footer-copyRight p {
     margin-right: 0;
     text-align: center;
+  }
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {

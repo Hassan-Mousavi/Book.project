@@ -1,3 +1,10 @@
+const navBtn = document.querySelector(".nav_toggle");
+const navList = document.querySelector(".nav");
+const navBtnLine = document.querySelector(".nav_toggle_line");
+navBtn.addEventListener("click", function () {
+  navList.classList.toggle("nav_mobile");
+  navBtn.classList.toggle("nav_toggle_icon--open");
+});
 // slider
 const slides = document.querySelectorAll(".slide");
 slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
