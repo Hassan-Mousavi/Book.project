@@ -1,9 +1,11 @@
 const navBtn = document.querySelector(".nav_toggle");
 const navList = document.querySelector(".nav");
 const navBtnLine = document.querySelector(".nav_toggle_line");
+const menu = document.querySelector(".menu");
 navBtn.addEventListener("click", function () {
   navList.classList.toggle("nav_mobile");
   navBtn.classList.toggle("nav_toggle_icon--open");
+  menu.classList.toggle("menu--open");
 });
 // slider
 const slides = document.querySelectorAll(".slide");
