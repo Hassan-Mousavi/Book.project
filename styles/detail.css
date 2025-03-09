@@ -49,6 +49,7 @@ body {
   align-items: center;
 }
 .nav_toggle {
+  display: none;
   cursor: pointer;
   padding: 1rem 0;
   transition: all 0.3s ease;
@@ -186,7 +187,6 @@ body {
 .nav {
   padding: 2rem 3rem;
   background-color: #a79277;
-  display: none;
 }
 .nav_mobile {
   display: block;
@@ -307,6 +307,10 @@ body {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+}
+.book_link-btn {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 .book_link:hover {
   background-color: #a79277;
