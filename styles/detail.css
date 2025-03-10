@@ -539,6 +539,7 @@ body {
 }
 .footer-address {
   display: flex;
+  align-items: center;
   background-color: #fff2e1;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -660,6 +661,12 @@ body {
   margin-right: 15rem;
   font-size: 2rem;
   font-weight: 700;
+}
+.position-icon {
+  width: 4rem;
+  height: 4rem;
+  fill: #a79277;
+  margin-left: 1rem;
 }
 .khadamat-icon {
   width: 4rem;
