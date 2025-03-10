@@ -43,9 +43,6 @@ const prevSlide = function () {
 const init = function () {
   goToSlide(0);
 };
-// EventHandlers
-// btnRight.addEventListener("click", nextSlide);
-// btnLeft.addEventListener("click", prevSlide);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevSlide();
@@ -84,11 +81,18 @@ const init_1 = function () {
 };
 setInterval(() => nextSlide(curSlide), 4000);
 setInterval(() => nextSlide_1(curSlide_1), 4000);
+// sticky nav
+const header = document.querySelector(".header");
+// console.log(entry);
+header.classList.add("sticky");
+header.classList.remove("sticky");
 
-// EventHandlers new
-// btnRight_1.addEventListener("click", nextSlide_1);
-// btnLeft_1.addEventListener("click", prevSlide_1);
-
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
 // smooth scroll
 // document.querySelector(".sort-list").addEventListener("click", function (e) {
 //   e.preventDefault();

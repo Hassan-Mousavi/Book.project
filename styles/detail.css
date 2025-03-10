@@ -13,7 +13,9 @@ body {
   font-family: "Times New Roman";
 }
 /* helper class */
-
+.sticky {
+  position: fixed;
+}
 /* header */
 .header {
   background-color: #a79277;
