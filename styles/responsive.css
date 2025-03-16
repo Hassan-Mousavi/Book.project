@@ -1,8 +1,4 @@
 @media screen and (min-width: 1400px) {
-  .search {
-    flex-direction: row;
-    justify-content: center;
-  }
   .vorod-sign_text {
     width: 7rem;
   }
@@ -16,12 +12,7 @@
     display: none;
   }
   .nav {
-    width: 100%;
     display: block;
-  }
-  .search {
-    flex-direction: row;
-    justify-content: center;
   }
   .vorod-sign_text {
     width: 7rem;
@@ -47,6 +38,11 @@
     right: 4%;
   }
 }
+@media screen and (max-width: 1200px) {
+  .header-content {
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header-content input {
     width: 49rem;
@@ -55,7 +51,10 @@
     width: 35rem;
   }
   .search {
-    width: 50%;
+    width: 40rem;
+  }
+  .menu {
+    justify-content: space-evenly;
   }
   .product-slider {
     max-width: 75rem;

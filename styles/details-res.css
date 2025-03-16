@@ -19,6 +19,10 @@
     width: 100%;
     padding: 0 2rem;
   }
+  .header-content {
+    gap: 0;
+    justify-content: space-between;
+  }
   .entire-footer {
     flex-direction: column;
   }
@@ -53,7 +57,12 @@
     width: 40rem;
     margin-left: 0;
   }
-
+  .menu {
+    justify-content: space-evenly;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
   .details_container {
     grid-template-columns: 1fr 2fr;
   }

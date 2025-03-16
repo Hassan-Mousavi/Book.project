@@ -29,10 +29,11 @@ body {
 .header-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 5rem;
   align-items: center;
   padding: 1.5rem 3rem;
+  width: 100%;
   /* background-color: #a79277; */
 }
 .header-content input {
@@ -132,7 +133,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
 }
 .search input {
   text-align: right;
@@ -180,6 +181,7 @@ body {
 .vorod-login {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .vorod-icon {
   width: 2.5rem;
@@ -204,7 +206,6 @@ body {
   margin-right: 5rem;
   font-size: 2rem;
   font-weight: 700;
-  padding: 1rem 2rem;
   color: #a79277;
 }
 
