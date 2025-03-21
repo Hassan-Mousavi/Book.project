@@ -17,8 +17,6 @@ body {
   padding: 0 1.5rem 0 1.5rem;
   margin: 0 auto;
   position: relative;
-
-  border: 1px solid black;
 }
 /* header */
 .header {
@@ -142,6 +140,9 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+#vorod_mobile {
+  display: none;
 }
 .vorod-login_text,
 .vorod-sign_text {
