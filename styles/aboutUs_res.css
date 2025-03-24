@@ -103,9 +103,15 @@
   }
   .search {
     margin-left: 0;
-    width: 90%;
+    width: 100%;
   }
   .search input {
+    width: 100%;
+  }
+  .nav {
+    position: absolute;
+    z-index: 1000;
+    top: 94px;
     width: 100%;
   }
   .nav-list {
@@ -133,11 +139,6 @@
   .menu--open {
     height: 30rem;
     border: 3px solid #fff2e1;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
   }
   .menu__item {
     margin-right: 0;

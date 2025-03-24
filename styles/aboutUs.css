@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
   position: relative;
 }
-.header-content {
+.header_content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -37,7 +37,7 @@ body {
   padding: 1.5rem 3rem;
   /* background-color: #a79277; */
 }
-.header-content input {
+.header_content input {
   height: 5rem;
   width: 50rem;
   border-top-right-radius: 15px;
@@ -194,7 +194,6 @@ body {
 }
 .nav {
   padding: 2rem 3rem;
-  background-color: #a79277;
 }
 .nav_mobile {
   display: block;

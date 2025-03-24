@@ -147,7 +147,7 @@
     margin-bottom: 1rem;
   }
   .menu {
-    backdrop-filter: blur(3px);
+    background-color: #a79277;
     flex-direction: column;
     justify-content: center;
     align-items: center;
