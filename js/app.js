@@ -82,17 +82,14 @@ const init_1 = function () {
 setInterval(() => nextSlide(curSlide), 4000);
 setInterval(() => nextSlide_1(curSlide_1), 4000);
 // sticky nav
-const header = document.querySelector(".header");
-// console.log(entry);
-header.classList.add("sticky");
-header.classList.remove("sticky");
-
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
+window.addEventListener("scroll", function () {
+  const navBar = this.document.querySelector(".navbar");
+  if (this.window.scrollY > 90) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
 });
-headerObserver.observe(header);
 // smooth scroll
 // document.querySelector(".sort-list").addEventListener("click", function (e) {
 //   e.preventDefault();

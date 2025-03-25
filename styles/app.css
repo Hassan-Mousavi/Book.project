@@ -12,6 +12,13 @@ body {
   background-color: #fff;
   font-family: "Times New Roman";
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #a79277;
+}
 .container {
   width: 127rem;
   padding: 0 1.5rem 0 1.5rem;

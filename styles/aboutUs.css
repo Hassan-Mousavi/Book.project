@@ -17,6 +17,10 @@ body {
 /* helper class */
 .sticky {
   position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #a79277;
+  z-index: 1000;
 }
 /* header */
 .header {

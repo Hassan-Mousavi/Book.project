@@ -12,7 +12,13 @@ body {
   background-color: #fff;
   font-family: "Times New Roman";
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #a79277;
+  z-index: 1000;
+}
 .header {
   background-color: #a79277;
 }
