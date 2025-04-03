@@ -90,12 +90,21 @@ window.addEventListener("scroll", function () {
     navBar.classList.remove("sticky");
   }
 });
-// smooth scroll
-// document.querySelector(".sort-list").addEventListener("click", function (e) {
-//   e.preventDefault();
-//   console.log(e.target);
-//   if (e.target.classList.contains("sort-link")) {
-//     const id = e.target.getAttribute("href");
-//     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-//   }
-// });
+// user_image-file
+document.getElementById("file_input").addEventListener("change", function (e) {
+  const file = e.target.file[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+      const preview = document.getElementById("preview");
+      preview.innerHTML = `
+      <img src="${e.target.result}"
+        alt="پیشنمایش عکس"
+        style="max-width:220px;margin-top:20px"
+      `;
+    };
+    reader.readAsDataURL(file);
+  }
+});

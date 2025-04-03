@@ -226,7 +226,22 @@ body {
 .menu__link:hover {
   color: #a79277;
 }
-
+.upload_btn {
+  padding: 1rem 2rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+#file_input {
+  display: none;
+}
 /* footer */
 .footer {
   background-color: #a79277;

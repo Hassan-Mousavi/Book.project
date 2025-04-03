@@ -94,10 +94,40 @@
           <p class="panel_caption">ویرایش اطلاعات حساب</p>
           <form action="#" class="panel_form">
             <div class="username">
-              <p>نام</p>
-              <input type="text" />
+              <div class="full_name">
+                <div class="first_name">
+                  <label for="">نام</label>
+                  <input type="text" required />
+                </div>
+                <div class="last_name">
+                  <label for="">نام خانوادگی</label>
+                  <input type="text" required />
+                </div>
+              </div>
+              <div class="user_email">
+                <label for="">آدرس ایمیل</label>
+                <input type="email" required />
+              </div>
+              <div class="user_password">
+                <label for="">تغییر گذرواژه</label>
+                <p>گذرواژه پیشین(در صورتی که قصد تغییر ندارید خالی بگذارید)</p>
+                <input type="password" />
+              </div>
             </div>
           </form>
+        </div>
+        <div class="profile_img">
+          <h2 class="profile_img_header">تصویر پروفایل</h2>
+          <p class="profile_img_text">تغییر تصویر پروفایل</p>
+          <div class="profile_image">
+            <div class="user_image" id="preview"></div>
+            <p class="user_image_caption">
+              فقط فایل های png,jpeg,jpg,حداکثر حجم 2MB حداقل سایز تصویر انتخابی
+              باید 1170px *220px باشد.
+            </p>
+            <label for="file_input" class="upload_btn">انتخاب تصویر</label>
+            <input type="file" id="file_input" />
+          </div>
         </div>
       </div>
     </main>
@@ -209,5 +239,6 @@
         <p>کلیه حقوق مادی و معنوی این سایت متعلق به شرکت Motive_Book میباشد.</p>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
