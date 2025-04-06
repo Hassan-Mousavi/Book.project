@@ -108,3 +108,15 @@ document.getElementById("file_input").addEventListener("change", function (e) {
     reader.readAsDataURL(file);
   }
 });
+// shaba_number
+const inputShaba = document.querySelector(".shaba_number");
+const maxDigit = 24;
+
+inputShaba.addEventListener("input", function (e) {
+  let value = this.value.replace(/[^0-9]/g);
+
+  if (value.length > maxDigit) {
+    value = value.slice(0, maxDigit);
+  }
+  this.value = value;
+});
