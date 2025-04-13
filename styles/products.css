@@ -150,6 +150,9 @@ body {
   border-top-left-radius: 15px;
   fill: #a79277;
 }
+#vorod_mobile {
+  display: none;
+}
 .vorod {
   display: flex;
   align-items: center;
