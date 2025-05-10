@@ -1,7 +1,21 @@
+@media screen and (min-width: 1400px) {
+  .vorod-sign_text {
+    width: 7rem;
+  }
+}
 @media screen and (max-width: 1400px) {
   .container {
     width: 100%;
     padding: 0 1.5rem;
+  }
+  .nav_toggle {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+  .vorod-sign_text {
+    width: 7rem;
   }
   .hero-details {
     left: 5rem;
@@ -17,8 +31,6 @@
   .entire-footer {
     display: block;
   }
-  .footer-p2 {
-  }
   .slider_btn--left {
     left: 4%;
   }
@@ -26,7 +38,39 @@
     right: 4%;
   }
 }
+@media screen and (max-width: 1200px) {
+  .header-content {
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 1024px) {
+  .header-content input {
+    width: 49rem;
+  }
+  .hero-details {
+    width: 35rem;
+  }
+  .search {
+    width: 40rem;
+  }
+  .menu {
+    justify-content: space-evenly;
+  }
+  .product-slider {
+    max-width: 75rem;
+  }
+  .product-card {
+    width: 100%;
+  }
+  .slider__btn--right,
+  .slider_btn--right {
+    right: 5%;
+  }
+  .slider__btn--left,
+  .slider_btn--left {
+    left: 5%;
+  }
+
   .entire-footer {
     flex-direction: column;
   }
@@ -54,8 +98,18 @@
   html {
     font-size: 8px;
   }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* .header-logo,
+  .vorod {
+    margin-left: auto;
+  } */
   .header-content {
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 2rem;
     padding: 2rem;
   }
@@ -63,36 +117,89 @@
     width: 100%;
     order: 3;
   }
-  .nav {
+  .vorod {
     display: none;
   }
-  .mobile-menu {
+  #vorod_mobile {
+    display: flex;
+  }
+  .nav {
+    position: absolute;
+    z-index: 1000;
+    top: 90px;
+    width: 100%;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-list_item {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .nav_toggle {
+    display: block;
+  }
+
+  /* .mobile-menu {
     display: block;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
+  } */
+  .menu {
+    backdrop-filter: blur(3px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+  }
+  .menu--open {
+    height: 30rem;
+    border: 1px solid #fff2e1;
+  }
+  .menu__item {
+    margin-right: 0;
   }
   .hero-img {
     height: 40rem;
     background-size: cover;
   }
   .hero-details {
-    width: 90%;
+    width: 60%;
     left: 5%;
-    text-align: center;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .search {
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
   }
   .banners {
     flex-direction: column;
     gap: 2rem;
   }
-  .mini-banner {
-    width: 100%;
-  }
   .product-slider {
     max-width: 76rem;
   }
-
+  .product-card_link {
+    display: inline-block;
+    width: 100%;
+  }
+  .product-card_icon {
+    margin-right: 28rem;
+  }
   .slide,
   .slide_1 {
     height: auto;
@@ -106,6 +213,14 @@
     width: 100%;
     margin-right: 1rem;
   }
+  .product-card_img {
+    width: 100%;
+  }
+  .slide,
+  .slide_1 {
+    width: 50%;
+  }
+
   .entire-footer {
     flex-direction: column;
   }
@@ -146,8 +261,22 @@
   html {
     font-size: 7px;
   }
+  .hero-img {
+    background-position: top;
+  }
   .hero-title {
     font-size: 3.5rem;
+  }
+  .header-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .search {
+    width: 100%;
+  }
+  .nav {
+    top: 79.5px;
   }
   .product-card_img {
     width: 100%;
@@ -160,6 +289,18 @@
   .product-card_img {
     object-fit: contain;
     height: 20rem;
+  }
+  .product-card {
+    margin-right: 1rem;
+  }
+  .product-slider {
+    max-width: 56rem;
+  }
+  .slide {
+    width: 50%;
+  }
+  .product-card:nth-child(even) {
+    margin-right: 1.2rem;
   }
   .footer-p1 {
     width: 100%;
