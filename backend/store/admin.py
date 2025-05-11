@@ -15,7 +15,7 @@ class DiscountAdmin(admin.ModelAdmin):
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ['title', 'category', 'inventory', 'price']
+    list_display = ['title', 'category', 'inventory', 'price', 'datatime_created']
     list_per_page = 10
     list_editable = ['inventory', 'price']
     ordering = ['inventory']
