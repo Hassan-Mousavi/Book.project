@@ -12,6 +12,7 @@ class HomeView(generic.ListView):
 
 
 class BookListView(generic.ListView):
+    paginate_by = 4
     template_name = 'store/book_list.html'
     context_object_name = 'books'
 

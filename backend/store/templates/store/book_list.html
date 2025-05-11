@@ -97,9 +97,10 @@
         <div class="container">
             <div class="pagination">
                 <ul class="list_pagination">
+                    {% if page_obj.has_previous %}
                     <li class="page_item">
                         <a
-                                href="#"
+                                href="?page={{ page_obj.previous_page_number }}&sort={{ request.GET.sort }}"
                                 class="page_link disabled"
                                 aria-label="previous"
                                 onclick="changePage(currentPage-1)"
@@ -107,27 +108,15 @@
                             <span aria-hidden="true">&laquo;</span></a
                         >
                     </li>
+                    {% endif %}
                     <!-- page numbers -->
                     <li class="page_item active" aria-current="page">
-                        <a href="#" class="page_link" onclick="changePage(1)">1</a>
+                        <a href="" class="page_link" onclick="changePage(1)">{{ page_obj.number }}</a>
                     </li>
-                    <li class="page_item">
-                        <a href="#" class="page_link" onclick="changePage(2)">2</a>
-                    </li>
-                    <li class="page_item">
-                        <a href="#" class="page_link" onclick="changePage(3)">3</a>
-                    </li>
-                    <!-- noghte chin -->
-                    <li class="page_item">
-                        <span class="page_link">...</span>
-                    </li>
-                    <!-- last page -->
-                    <li class="page_item">
-                        <a href="#" class="page_link" onclick="changePage(10)">10</a>
-                    </li>
+                    {% if page_obj.has_next %}
                     <li class="page_item">
                         <a
-                                href="#"
+                                href="?page={{ page_obj.next_page_number }}&sort={{ request.GET.sort }}"
                                 class="page_link"
                                 aria-label="next"
                                 onclick="changePage(currentPage+1)"
@@ -135,6 +124,7 @@
                             <span aria-hidden="true">&raquo;</span></a
                         >
                     </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
