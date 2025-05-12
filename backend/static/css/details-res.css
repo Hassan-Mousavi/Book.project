@@ -1,0 +1,344 @@
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .book_link-btn {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .nav_toggle {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .header-content {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .entire-footer {
+    flex-direction: column;
+  }
+  .footer-p3 {
+    position: static;
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+  }
+  .footer-p2 {
+    margin: 0 auto;
+  }
+  .footer-caption {
+    text-align: justify;
+  }
+  .contact-title {
+    padding: 2rem 0;
+    margin-bottom: 0;
+  }
+  .contact-caption {
+    margin-bottom: 5rem;
+  }
+  .contact-telphone_number {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header_content {
+    justify-content: space-evenly;
+  }
+  .search {
+    width: 40rem;
+    margin-left: 0;
+  }
+  .menu {
+    justify-content: space-evenly;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
+  .details_container {
+    grid-template-columns: 1fr 2fr;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+  .entire-footer {
+    flex-direction: column;
+  }
+  .footer-p3 {
+    position: static;
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+  }
+  .footer-p2 {
+    margin: 0 auto;
+  }
+  .footer-caption {
+    text-align: justify;
+  }
+  .contact-title {
+    padding: 2rem 0;
+    margin-bottom: 0;
+  }
+  .contact-caption {
+    margin-bottom: 5rem;
+  }
+  .contact-telphone_number {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .vorod {
+    display: none;
+  }
+  .nav_toggle {
+    display: block;
+  }
+  .search {
+    margin-left: 0;
+    width: 100%;
+  }
+  .search input {
+    width: 100%;
+  }
+  .nav {
+    position: absolute;
+    z-index: 1000;
+    top: 94px;
+    width: 100%;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-list_item {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .menu {
+    background-color: #a79277;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+  }
+  .menu--open {
+    height: 30rem;
+    border: 3px solid #fff2e1;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
+  #vorod_mobile {
+    display: flex;
+  }
+  .details_container {
+    grid-template-columns: 1.6fr 2.4fr;
+  }
+  .book_product {
+    height: 45rem;
+  }
+  .book_img {
+    height: 25rem;
+    width: 25rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .book_link-btn {
+    margin: 2rem 0 0 2rem;
+  }
+  .details_item:last-child {
+    text-align: justify;
+  }
+  .icons_list {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .card {
+    width: 20rem;
+  }
+
+  .entire-footer {
+    flex-direction: column;
+  }
+  .footer-p2 {
+    width: 100%;
+    padding: 2rem;
+  }
+  .footer-caption {
+    text-align: justify;
+  }
+  .contact-title {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  .contact-caption {
+    margin-bottom: 2rem;
+  }
+  .contact-telphone_number {
+    margin-bottom: 2rem;
+  }
+  .footer-p3 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .contact-relation {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .footer-copyRight p {
+    margin-right: 0;
+    text-align: center;
+  }
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+  /* .header-content {
+    flex-direction: column;
+  } */
+  .vorod {
+    flex-direction: column;
+  }
+  .nav-list_item {
+    margin-right: 1rem;
+    font-size: 1.6rem;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
+  .details_container {
+    grid-template-columns: 30rem;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+  .book_product {
+    height: 100%;
+    padding: 3rem 0;
+  }
+  .book_img {
+    height: auto;
+    width: 25rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+  }
+  .relate_title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .card {
+    width: 50%;
+  }
+  .comment_container {
+    margin-bottom: 5rem;
+  }
+  .comment_container,
+  .question_container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  .comment_btn,
+  .question_btn {
+    height: 5rem;
+    width: 20rem;
+    grid-row: 2;
+    margin-bottom: 3rem;
+  }
+  .comment_part,
+  .question_part {
+    margin: 0 auto;
+  }
+  .scoreandcomment_title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .question_title {
+    width: 28rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .footer-p1 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+  .footer-khadamat {
+    flex-direction: column-reverse;
+  }
+  .khadamat-p2 {
+    margin-bottom: 2rem;
+  }
+  .khadamat-p3 {
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  .footer-p3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .contact-phone_number,
+  .contact-telphone_number {
+    font-size: 2rem;
+  }
+  .contact-title {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  .contact-caption {
+    margin-bottom: 2rem;
+  }
+  .contact-telphone_number {
+    margin-bottom: 2rem;
+  }
+  .contact-relation {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .contact-relation_text {
+    width: 90%;
+  }
+  .footer-copyRight {
+    padding: 0;
+  }
+}
