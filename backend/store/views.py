@@ -33,4 +33,8 @@ class BookListView(generic.ListView):
 
 def book_detail(request, pk):
     book = get_object_or_404(Book, pk=pk)
-    return render(request, 'store/book_detail.html', {'book': book})
+    related_books = Book.objects.filter(category=book.category).exclude(id=book.id)[0:6]
+    return render(request, 'store/book_detail.html', {
+        'book': book,
+        'related_books': related_books,
+    })

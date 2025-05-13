@@ -1,3 +1,5 @@
+from lib2to3.fixes.fix_asserts import FixAsserts
+
 from django.db import models
 from django.core.validators import MinValueValidator
 from django.conf import settings
@@ -18,6 +20,14 @@ class Discount(models.Model):
     def __str__(self):
         return self.discount
 
+class Producer(models.Model):
+    name = models.CharField(max_length=255, blank=False, null=False, default=None)
+    description = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+
 
 class Book(models.Model):
     title = models.CharField(max_length=255)
@@ -25,6 +35,9 @@ class Book(models.Model):
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name="books")
     description = models.TextField(default='Lorem Ipsum')
     price = models.DecimalField(max_digits=15 , decimal_places=0)
+    producer = models.ForeignKey(Producer, on_delete=models.PROTECT, related_name="books", default=1)
+    writer = models.CharField(max_length=255, default='<NAME>')
+    translator = models.CharField(max_length=255, default='<NAME>')
     inventory = models.IntegerField(validators=[MinValueValidator(0)])
     datatime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
