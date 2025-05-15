@@ -1,4 +1,5 @@
 from django.views import generic
+from django.shortcuts import render, get_object_or_404
 
 from .models import Book
 
@@ -28,3 +29,12 @@ class BookListView(generic.ListView):
             return queryset.order_by('-price')
         else:
             return queryset.order_by('-datatime_created')
+
+
+def book_detail(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    related_books = Book.objects.filter(category=book.category).exclude(id=book.id)[0:6]
+    return render(request, 'store/book_detail.html', {
+        'book': book,
+        'related_books': related_books,
+    })

@@ -1,0 +1,213 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %} Detail Page {% endblock title %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/detail_res.css' %}"/>
+{% endblock style %}
+
+{% block content %}
+
+    <main class="main">
+        <section class="details_book">
+            <div class="container">
+                <div class="details_container">
+                    <div class="book_product">
+                        <img
+                                src="{{ book.image.url }}"
+                                alt="product"
+                                class="book_img"
+                        />
+                        <ul class="book_list">
+                            <li class="book_option">
+                                <svg class="book_icon" viewBox="0 0 512 512">
+                                    <path
+                                            d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"
+                                    />
+                                </svg>
+                                فروشنده:
+                                <span>نام سایت</span>
+                            </li>
+                            <li class="book_option">
+                                <svg class="book_icon" viewBox="0 0 512 512">
+                                    <path
+                                            d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"
+                                    />
+                                </svg>
+                                آماده ارسال
+                            </li>
+                        </ul>
+                        <div class="book_price">
+
+                            <div>
+                                <svg
+                                        aria-hidden="true"
+                                        data-prefix="far"
+                                        data-icon="percent"
+                                        role="img"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512"
+                                        class="book_percent-icon"
+                                >
+                                </svg>
+                            </div>
+
+                            <p>{{ book.price }}تومان </p>
+                        </div>
+                        <div class="book_link-btn">
+                            <a href="#" class="book_link">افزودن به سبد خرید</a>
+                        </div>
+                    </div>
+                    <div class="book_details">
+                        <h2 class="book_name">{{ book.title }}</h2>
+                        <hr/>
+                        <h3 class="book_title">تولید کننده:</h3>
+                        <p class="book_producer-name">نام انتشارات</p>
+                        <h3 class="book_title-details">مشخصات:</h3>
+                        <ul class="details_list">
+                            <li class="details_item">
+                                نویسنده:
+                                <span>{{ book.writer }}</span>
+                            </li>
+                            <li class="details_item">
+                                مترجم:
+                                <span>{{ book.translator }}</span>
+                            </li>
+                            <li class="details_item">
+                                ژانر:
+                                <span>{{ book.category }}</span>
+                            </li>
+                            <li class="details_item">
+                                جلد:
+                                <span>3</span>
+                            </li>
+                            <li class="details_item">
+                                درباره کتاب:
+                                <span class="book_caption"
+                                >
+                                    {{ book.description }}
+                                </span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="icons">
+            <div class="container">
+                <ul class="icons_list">
+                    <li class="icon_item">
+                        <svg class="ad_icons" viewBox="0 0 512 512">
+                            <path
+                                    d="M232 120C232 106.7 242.7 96 256 96C269.3 96 280 106.7 280 120V243.2L365.3 300C376.3 307.4 379.3 322.3 371.1 333.3C364.6 344.3 349.7 347.3 338.7 339.1L242.7 275.1C236 271.5 232 264 232 255.1L232 120zM256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0zM48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48C141.1 48 48 141.1 48 256z"
+                            />
+                        </svg>
+                        پشتیبانی 24 ساعته
+                    </li>
+                    <li class="icon_item">
+                        <svg
+                                aria-hidden="true"
+                                data-prefix="far"
+                                data-icon="repeat"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                class="ad_icons"
+                        >
+                            <path
+                                    fill="currentColor"
+                                    d="M512 256c0 83.813-68.187 152-152 152H136.535l55.762 54.545c4.775 4.67 4.817 12.341.094 17.064l-16.877 16.877c-4.686 4.686-12.284 4.686-16.971 0l-104-104c-4.686-4.686-4.686-12.284 0-16.971l104-104c4.686-4.686 12.284-4.686 16.971 0l16.877 16.877c4.723 4.723 4.681 12.393-.094 17.064L136.535 360H360c57.346 0 104-46.654 104-104 0-19.452-5.372-37.671-14.706-53.258a11.991 11.991 0 0 1 1.804-14.644l17.392-17.392c5.362-5.362 14.316-4.484 18.491 1.847C502.788 196.521 512 225.203 512 256zM62.706 309.258C53.372 293.671 48 275.452 48 256c0-57.346 46.654-104 104-104h223.465l-55.762 54.545c-4.775 4.67-4.817 12.341-.094 17.064l16.877 16.877c4.686 4.686 12.284 4.686 16.971 0l104-104c4.686-4.686 4.686-12.284 0-16.971l-104-104c-4.686-4.686-12.284-4.686-16.971 0l-16.877 16.877c-4.723 4.723-4.681 12.393.094 17.064L375.465 104H152C68.187 104 0 172.187 0 256c0 30.797 9.212 59.479 25.019 83.447 4.175 6.331 13.129 7.209 18.491 1.847l17.392-17.392a11.991 11.991 0 0 0 1.804-14.644z"
+                                    class=""
+                            ></path>
+                        </svg>
+                        7روز فرصت بازگشت کالا
+                    </li>
+                    <li class="icon_item">
+                        <svg class="ad_icons" viewBox="0 0 512 512">
+                            <path
+                                    d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"
+                            />
+                        </svg>
+                        تضمین کیفیت کالا
+                    </li>
+                    <li class="icon_item">
+                        <svg class="ad_icons" viewBox="0 0 576 512">
+                            <path
+                                    d="M168 336C181.3 336 192 346.7 192 360C192 373.3 181.3 384 168 384H120C106.7 384 96 373.3 96 360C96 346.7 106.7 336 120 336H168zM360 336C373.3 336 384 346.7 384 360C384 373.3 373.3 384 360 384H248C234.7 384 224 373.3 224 360C224 346.7 234.7 336 248 336H360zM512 32C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H512zM512 80H64C55.16 80 48 87.16 48 96V128H528V96C528 87.16 520.8 80 512 80zM528 224H48V416C48 424.8 55.16 432 64 432H512C520.8 432 528 424.8 528 416V224z"
+                            />
+                        </svg>
+                        پرداخت امن از درگاه بانکی
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="relate_products">
+            <div class="container">
+                <h2 class="relate_title">کالاهای مرتبط</h2>
+                <div class="relate_product">
+                    {% for book in related_books %}
+                        <div class="card">
+                            <img
+                                    class="card_img"
+                                    src="{{ book.image.url }}"
+                                    alt="product-1"
+                            />
+                            <div class="card_detail">
+                                <h3 class="card_title">{{ book.title }}</h3>
+                                <div class="card_price">
+                                    <p>{{ book.price }} تومان</p>
+                                    <span>
+                  </span>
+                                </div>
+                                <div class="card_icons">
+                                    <a href="{% url 'book_detail' book.id %}">
+                                    <svg
+                                            enable-background="new 0 0 512 512"
+                                            version="1.1"
+                                            viewBox="0 0 512 512"
+                                            class="card_icon"
+                                    >
+                                        <path
+                                                d="M423.9,232.9c0-12.8-10.4-23.2-23.2-23.2h-20.1c-0.5-1.1-1-2.2-1.7-3.2l-45.8-71.3c-3.3-5.1-8.4-8.7-14.3-10    c-6-1.3-12-0.2-17.2,3.1c-10.6,6.8-13.6,20.9-6.8,31.5l32,49.8H185.3l32-49.8c2.4-3.7,3.6-7.9,3.6-12.3c0-7.8-3.9-15-10.5-19.2    c-5.1-3.3-11.2-4.4-17.2-3.1c-5.9,1.3-11,4.8-14.3,10l-45.8,71.3c-0.7,1-1.2,2.1-1.7,3.2h-20.1c-12.8,0-23.2,10.4-23.2,23.2v1.5    c0,12.8,10.4,23.2,23.2,23.2h2.2l38.1,124.3c1,3.2,3.9,5.3,7.2,5.3h194.2c3.3,0,6.2-2.2,7.2-5.3l38.1-124.3h2.2    c12.8,0,23.2-10.4,23.2-23.2V232.9z M307.3,151.8c-2.3-3.6-1.3-8.4,2.3-10.8c1.8-1.1,3.8-1.5,5.9-1.1c2,0.4,3.8,1.6,4.9,3.4    l42.6,66.3h-18.5L307.3,151.8z M191.6,143.3c1.1-1.8,2.9-3,4.9-3.4c2-0.4,4.1-0.1,5.9,1.1c2.2,1.4,3.6,3.9,3.6,6.6    c0,1.5-0.4,2.9-1.2,4.2l-37.2,57.9h-18.5L191.6,143.3z M347.6,372.2H164.4l-35.2-114.6h253.5L347.6,372.2z M408.9,234.4    c0,4.5-3.7,8.2-8.2,8.2h-7.7c0,0-0.1,0-0.1,0H119.2c0,0-0.1,0-0.1,0h-7.7c-4.5,0-8.2-3.7-8.2-8.2v-1.5c0-4.5,3.7-8.2,8.2-8.2H137    c0,0,0.1,0,0.1,0h34.4c0,0,0,0,0,0c0,0,0,0,0,0h168.8c0,0,0,0,0,0c0,0,0,0,0,0h34.4c0,0,0,0,0.1,0h25.7c4.5,0,8.2,3.7,8.2,8.2    V234.4z"
+                                        />
+                                        <path
+                                                d="M208.9,342.8c4.1,0,7.5-3.4,7.5-7.5v-40.8c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5v40.8    C201.4,339.5,204.8,342.8,208.9,342.8z"
+                                        />
+                                        <path
+                                                d="M256,342.8c4.1,0,7.5-3.4,7.5-7.5v-40.8c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5v40.8C248.5,339.5,251.9,342.8,256,342.8z    "
+                                        />
+                                        <path
+                                                d="M303.1,342.8c4.1,0,7.5-3.4,7.5-7.5v-40.8c0-4.1-3.4-7.5-7.5-7.5s-7.5,3.4-7.5,7.5v40.8    C295.6,339.5,298.9,342.8,303.1,342.8z"
+                                        />
+                                    </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section class="scoreAndComment">
+            <div class="container">
+                <h2 class="scoreandcomment_title">امتیاز و دیدگاه کاربران</h2>
+                <div class="comment_container">
+                    <button class="comment_btn">+ امتیاز و دیدگاه کاربران</button>
+                    <div class="comment_part"></div>
+                </div>
+
+                <h2 class="question_title">
+                    اولین نفری باشید که پرسش جدید ثبت میکند
+                </h2>
+                <div class="question_container">
+                    <button class="question_btn">+ پرسش و پاسخ</button>
+                    <div class="question_part"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock content %}

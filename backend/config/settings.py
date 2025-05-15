@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'core',
     'store',
     'accounts',
+    'pages',
+
 
 ]
 

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Category, Comment, Customer, Book, Discount
+from .models import Category, Comment, Customer, Book, Discount, Producer
 
 
 @admin.register(Category)
@@ -12,6 +12,12 @@ class CategoryAdmin(admin.ModelAdmin):
 class DiscountAdmin(admin.ModelAdmin):
     list_display = ['discount', 'description']
 
+@admin.register(Producer)
+class ProducerAdmin(admin.ModelAdmin):
+    list_display = ['name', ]
+    list_per_page = 10
+    ordering = ['name']
+    search_fields = ['name__istartswith']
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
