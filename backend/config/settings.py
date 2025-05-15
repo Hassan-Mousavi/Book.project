@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'store',
     'accounts',
     'pages',
-
+    'profiles',
 
 ]
 
