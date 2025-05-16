@@ -9,7 +9,7 @@ class HomeView(generic.ListView):
     context_object_name = 'books'
 
     def get_queryset(self):
-        return Book.objects.select_related('category').all()
+        return Book.objects.select_related('category').order_by('-datatime_created').all()[0:6]
 
 
 class BookListView(generic.ListView):
