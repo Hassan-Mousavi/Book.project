@@ -1,0 +1,86 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %} Profile {% endblock title %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static  'css/panel.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/panel_res.css' %}"/>
+{% endblock style %}
+
+{% block content %}
+    <main class="main">
+        <div class="container">
+            <div class="panel_container">
+                <div class="panel">
+                    <h2 class="panel_header">اطلاعات حساب</h2>
+                    <p class="panel_caption">ویرایش اطلاعات حساب</p>
+                    <form action="{% url 'profile' %}" method="POST" class="panel_form">
+                        {% csrf_token %}
+                        <div class="username">
+                            <div class="full_name">
+                                <div class="first_name">
+                                    <label for="">نام</label>
+                                    <input type="text" name="first_name" value="{{ user.first_name }}" required/>
+                                </div>
+                                <div class="last_name">
+                                    <label for="">نام خانوادگی</label>
+                                    <input type="text" name="last_name" value="{{ user.last_name }}" required/>
+                                </div>
+                            </div>
+                            <div class="user_email">
+                                <label for="">آدرس ایمیل</label>
+                                <input type="email" name="email" value="{{ user.email }}" required/>
+                            </div>
+                            {#                            <div class="user_password">#}
+                            {#                                <label for="">تغییر گذرواژه</label>#}
+                            {#                                <p>#}
+                            {#                                    گذرواژه پیشین(در صورتی که قصد تغییر ندارید خالی بگذارید)#}
+                            {#                                </p>#}
+                            {#                                <input type="password"/>#}
+                            {#                            </div>#}
+                        </div>
+                        <button class="shaba_number_btn" type="submit">
+                            ذخیره اطلاعات
+                        </button>
+                    </form>
+
+                </div>
+                <div class="profile_pic">
+                    <div class="profile_img">
+                        <h2 class="profile_img_header">تصویر پروفایل</h2>
+                        <p class="profile_img_text">تغییر تصویر پروفایل</p>
+                        <div class="profile_image">
+                            <div class="user_image" id="preview"></div>
+                            <div class="user_caption">
+                                <p class="user_image_caption">
+                                    فقط فایل های png,jpeg,jpg,حداکثر حجم 2MB حداقل سایز تصویر
+                                    انتخابی باید 1170px *220px باشد.
+                                </p>
+                                <label for="file_input" class="upload_btn"
+                                >انتخاب تصویر</label
+                                >
+                                <input type="file" id="file_input"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shabe_number_part">
+                        <h3 class="shaba_number_header">
+                            شماره شبا جهت بازگرداندن وجه *
+                        </h3>
+                        <input
+                                class="shaba_number"
+                                type="number"
+                                placeholder="658795456685"
+                        />
+                        <button class="shaba_number_btn" type="submit">
+                            ذخیره اطلاعات
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+{% endblock content %}
