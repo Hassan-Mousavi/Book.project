@@ -1,15 +1,19 @@
+from lib2to3.fixes.fix_input import context
+
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 
 from .models import Book
 
 
-class HomeView(generic.ListView):
+class HomeView(generic.TemplateView):
     template_name = 'home.html'
-    context_object_name = 'books'
 
-    def get_queryset(self):
-        return Book.objects.select_related('category').order_by('-datatime_created').all()[0:6]
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['newest_books'] = Book.objects.select_related('category').order_by('-datatime_created')[:6]
+        context['cheapest_books'] = Book.objects.select_related('category').order_by('price')[:6]
+        return context
 
 
 class BookListView(generic.ListView):
