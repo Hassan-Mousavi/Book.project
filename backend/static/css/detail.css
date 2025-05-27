@@ -18,6 +18,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #a79277;
 }
 /* header */
 .header {
@@ -234,7 +235,7 @@ body {
 
 /* main */
 .details_container {
-  margin-top: 2rem;
+  margin-top: 20rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin-bottom: 5rem;
@@ -444,39 +445,57 @@ body {
   fill: #a79277;
   cursor: pointer;
 }
-/* score part */
-.scoreandcomment_title,
-.question_title {
-  margin-bottom: 5rem;
-  color: #a79277;
-  background-color: #fff2e1;
-  text-align: center;
-  padding: 0.5rem 1rem;
+.comment_part {
+  margin-top: 5rem;
+}
+.comments {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 0 3px rgba(167, 146, 119, 0.557);
   border-radius: 15px;
+  margin-bottom: 5rem;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  padding: 1rem 2rem;
 }
-.scoreandcomment_title {
-  width: 25rem;
-}
-.question_title {
-  width: 46rem;
-}
-.comment_container,
-.question_container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+.dateAndName_part {
+  display: flex;
   align-items: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
 }
-.question_container {
-  margin-bottom: 8rem;
+.writerName {
+  font-size: 2rem;
+  font-weight: 700;
 }
-.comment_btn,
-.question_btn {
-  width: 25rem;
-  height: 7rem;
+.writer_picture {
+  width: 5rem;
+  height: 5rem;
+  background-color: #d1bb9e;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.comment_title {
+  margin-bottom: 1rem;
+}
+.comment_caption {
+  color: #777;
+}
+.comment_box {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+}
+.comment_btn {
+  width: 15rem;
+  height: 5rem;
   font-size: 2rem;
   font-weight: 700;
   cursor: pointer;
@@ -494,24 +513,11 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  margin-bottom: 5rem;
 }
-.comment_btn:hover,
-.question_btn:hover {
+.comment_btn:hover {
   background-color: #fff2e1;
   color: #a79277;
-}
-.comment_part,
-.question_part {
-  width: 90%;
-  height: 35rem;
-  border: 3px dashed #a79277;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  margin-bottom: 5rem;
-  background-color: #fff2e1;
 }
 
 /* footer */
