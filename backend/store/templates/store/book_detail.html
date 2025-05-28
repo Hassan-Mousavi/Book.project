@@ -1,6 +1,7 @@
 {% extends '_base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
+{% load jalali_tags %}
 
 {% block title %} Detail Page {% endblock title %}
 
@@ -201,28 +202,34 @@
                         <div class="comment_details">
                             <div class="dateAndName_part">
                                 <p class="writerName">{{ comment.author }}</p>
-                                <span class="comment_date">{{ comment.datetime_created }}</span>
+                                <span class="comment_date">{{ comment.datetime_created|to_jalali:'%Y/%m/%d' }}</span>
                             </div>
 
                             <div class="comment_text">{{ comment.body }}</div>
                         </div>
                     </div>
                     {% endfor %}
-                    <h3 class="comment_title">نظر خود را بنویسید</h3>
-                    <p class="comment_caption">متن دیدگاه*</p>
-                    <form method="POST" action="{% url 'book_detail' book.id %}" >
-                        {% csrf_token %}
-                        <textarea
-                                class="comment_box"
-                                rows="10"
-                                cols="110"
-                                name="body"
-                                id="comments"
-                        ></textarea>
-                        <div class="comment_btn_Part">
-                            <button type="submit" class="comment_btn">ارسال</button>
-                        </div>
-                    </form>
+                    {% if user.is_authenticated %}
+                        <h3 class="comment_title">نظر خود را بنویسید</h3>
+                        <p class="comment_caption">متن دیدگاه*</p>
+                        <form method="POST" action="{% url 'book_detail' book.id %}" >
+                            {% csrf_token %}
+                            <textarea
+                                    class="comment_box"
+                                    rows="10"
+                                    cols="110"
+                                    name="body"
+                                    id="comments"
+                            ></textarea>
+                            <div class="comment_btn_Part">
+                                <button type="submit" class="comment_btn">ارسال</button>
+                            </div>
+                        </form>
+                    {% else %}
+                        <p style="margin-bottom: 20px;">
+                            You are not logged in, please <a href="{% url 'login' %}">login</a>
+                        </p>
+                    {% endif %}
 
                 </div>
             </div>

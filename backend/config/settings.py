@@ -48,7 +48,8 @@ INSTALLED_APPS = [
 
     # third party
     'crispy_forms',
-    "crispy_bootstrap5",
+    'crispy_bootstrap5',
+    'jalali_date',
 
     # my apps
     'core',

@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
-from django.views import generic
+from django.contrib.auth.decorators import login_required
 
-from core.models import CustomUser
 from .forms import ProfileForm
 
 
+@login_required(login_url='login')
 def profile(request):
     user = request.user
     if request.method == 'POST':
