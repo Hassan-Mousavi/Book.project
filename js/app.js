@@ -84,7 +84,7 @@ setInterval(() => nextSlide_1(curSlide_1), 4000);
 // sticky nav
 window.addEventListener("scroll", function () {
   const navBar = this.document.querySelector(".navbar");
-  if (this.window.scrollY > 90) {
+  if (this.window.scrollY > 250) {
     navBar.classList.add("sticky");
   } else {
     navBar.classList.remove("sticky");

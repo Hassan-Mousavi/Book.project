@@ -26,9 +26,10 @@ body {
   position: relative;
 }
 /* header */
-.header {
+
+.navbar {
   background-color: #a79277;
-  margin-bottom: 5rem;
+  backdrop-filter: blur(5px);
 }
 .header-content {
   display: flex;
@@ -234,6 +235,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 50rem;
+  margin-bottom: 5rem;
 }
 .hero-details {
   position: absolute;
@@ -284,6 +286,53 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.vocabulary_pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110rem;
+  height: 20rem;
+  background-color: rgb(216, 245, 110);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: #0e1935;
+}
+.vocabulary_pic img {
+  width: 40rem;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.vocabulary_caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+.vocabulary_title {
+  font-family: "b homa";
+}
+.buy_vocabulary {
+  text-decoration: none;
+  color: #0e1935;
+  background-color: rgb(83, 215, 238);
+  padding: 0.5rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-weight: 700;
+  font-family: "B homa";
 }
 .mini-banner {
   width: 39rem;
