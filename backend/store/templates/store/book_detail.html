@@ -1,5 +1,6 @@
 {% extends '_base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block title %} Detail Page {% endblock title %}
 
@@ -194,29 +195,35 @@
         <section class="Comment">
             <div class="container">
                 <div class="comment_part">
+                    {% for comment in comments %}
                     <div class="comments">
                         <div class="writer_picture"></div>
                         <div class="comment_details">
                             <div class="dateAndName_part">
-                                <p class="writerName">ادمین</p>
-                                <span class="comment_date">1403/2/25</span>
+                                <p class="writerName">{{ comment.author }}</p>
+                                <span class="comment_date">{{ comment.datetime_created }}</span>
                             </div>
 
-                            <div class="comment_text">عالی است.</div>
+                            <div class="comment_text">{{ comment.body }}</div>
                         </div>
                     </div>
+                    {% endfor %}
                     <h3 class="comment_title">نظر خود را بنویسید</h3>
                     <p class="comment_caption">متن دیدگاه*</p>
-                    <textarea
-                            class="comment_box"
-                            rows="10"
-                            cols="110"
-                            name="#"
-                            id="comment_part"
-                    ></textarea>
-                    <div class="comment_btn_Part">
-                        <button type="submit" class="comment_btn">ارسال</button>
-                    </div>
+                    <form method="POST" action="{% url 'book_detail' book.id %}" >
+                        {% csrf_token %}
+                        <textarea
+                                class="comment_box"
+                                rows="10"
+                                cols="110"
+                                name="body"
+                                id="comments"
+                        ></textarea>
+                        <div class="comment_btn_Part">
+                            <button type="submit" class="comment_btn">ارسال</button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </section>

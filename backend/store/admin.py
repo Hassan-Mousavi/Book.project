@@ -30,7 +30,7 @@ class BookAdmin(admin.ModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ['book', 'name', 'body', 'status']
+    list_display = ['author', 'book', 'body', 'status']
 
 
 @admin.register(Customer)

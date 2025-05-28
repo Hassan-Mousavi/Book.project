@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "debug_toolbar",
 
+    # third party
+    'crispy_forms',
+    "crispy_bootstrap5",
+
     # my apps
     'core',
     'store',
@@ -144,6 +148,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
+# crispy forms settings
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 # media
 MEDIA_URL = 'media/'

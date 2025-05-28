@@ -1,5 +1,4 @@
-from lib2to3.fixes.fix_asserts import FixAsserts
-
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.core.validators import MinValueValidator
 from django.conf import settings
@@ -66,9 +65,8 @@ class Comment(models.Model):
         (COMMENT_STATUS_APPROVED, 'Approved'),
         (COMMENT_STATUS_NOT_APPROVED, 'Not Approved'),
     ]
-
+    author = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, default=1, related_name="comments")
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments')
-    name = models.CharField(max_length=255)
     body = models.TextField()
     datetime_created = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=2, choices=COMMENT_STATUS, default=COMMENT_STATUS_WAITING)

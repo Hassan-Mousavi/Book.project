@@ -3,7 +3,8 @@ from lib2to3.fixes.fix_input import context
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 
-from .models import Book
+from .forms import CommentForm
+from .models import Book, Comment
 
 
 class HomeView(generic.TemplateView):
@@ -38,7 +39,23 @@ class BookListView(generic.ListView):
 def book_detail(request, pk):
     book = get_object_or_404(Book, pk=pk)
     related_books = Book.objects.filter(category=book.category).exclude(id=book.id)[0:6]
+    comments = Comment.objects.filter(book=book).order_by('-datetime_created')
+
+    if request.method == 'POST':
+        comment = CommentForm(request.POST)
+        if comment.is_valid():
+            comment = comment.save(commit=False)
+            comment.author = request.user
+            comment.book = book
+            comment.save()
+            comment = CommentForm()
+    else:
+        comment = CommentForm()
+
+
     return render(request, 'store/book_detail.html', {
         'book': book,
         'related_books': related_books,
+        'comments': comments,
+        'comment_form': comment,
     })
