@@ -284,6 +284,8 @@ body {
 }
 .banners {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -333,21 +335,6 @@ body {
   -o-border-radius: 15px;
   font-weight: 700;
   font-family: "B homa";
-}
-.mini-banner {
-  width: 39rem;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-}
-.mini-banner:hover {
-  transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
 }
 /* slider */
 .product-slider {
