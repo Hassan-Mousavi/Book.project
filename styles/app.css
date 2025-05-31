@@ -289,7 +289,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.vocabulary_pic {
+#baner_1,
+#baner_2,
+#baner_3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -302,6 +304,12 @@ body {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   color: #0e1935;
+}
+#baner_2 {
+  background-color: rgb(38, 212, 90);
+}
+#baner_3 {
+  background-color: rgb(167, 59, 218);
 }
 .vocabulary_pic img {
   width: 40rem;
@@ -520,7 +528,54 @@ body {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-
+.levels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+.level {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-decoration: none;
+  width: 40rem;
+  height: 45rem;
+  font-family: "b homa";
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+#level_1 {
+  background-color: rgb(241, 182, 204);
+}
+#level_2 {
+  background-color: rgb(220, 151, 228);
+}
+#level_3 {
+  background-color: rgb(159, 232, 233);
+}
+#level_4 {
+  background-color: rgb(123, 177, 223);
+}
+#level_5 {
+  background-color: rgb(203, 211, 124);
+}
+.level_title {
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.level img {
+  width: 100%;
+  padding: 1.5rem;
+}
+.level_image {
+  height: 25rem;
+}
 /* footer */
 .footer {
   background-color: #a79277;
