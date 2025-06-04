@@ -281,6 +281,7 @@ body {
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8rem;
 }
 #baner_1,
 #baner_2,
@@ -518,10 +519,9 @@ body {
   -o-transition: all 0.3s ease;
 }
 .levels {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 8rem;
 }
 .level {
@@ -529,7 +529,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   text-decoration: none;
-  width: 40rem;
+  width: 20rem;
   height: 45rem;
   font-family: "b homa";
   border-radius: 15px;
