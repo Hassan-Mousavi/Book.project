@@ -39,12 +39,17 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .header-content {
+  .header_content {
     justify-content: space-between;
+  }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 90rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .header-content input {
+  .header_content input {
     width: 49rem;
   }
   .hero-details {
@@ -55,6 +60,11 @@
   }
   .menu {
     justify-content: space-evenly;
+  }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 75rem;
   }
   .product-slider {
     max-width: 75rem;
@@ -107,13 +117,13 @@
   .vorod {
     margin-left: auto;
   } */
-  .header-content {
+  .header_content {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2rem;
     padding: 2rem;
   }
-  .header-content input {
+  .header_content input {
     width: 100%;
     order: 3;
   }
@@ -126,7 +136,7 @@
   .nav {
     position: absolute;
     z-index: 1000;
-    top: 115px;
+    top: 85px;
     width: 100%;
   }
   .nav-list {
@@ -182,6 +192,11 @@
     flex-direction: column;
     gap: 2rem;
   }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 100%;
+  }
   .product-slider {
     max-width: 76rem;
   }
@@ -212,7 +227,14 @@
   .slide_1 {
     width: 50%;
   }
-
+  .levels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .level {
+    margin: 0 auto;
+  }
   .entire-footer {
     flex-direction: column;
   }
@@ -259,13 +281,21 @@
   .hero-title {
     font-size: 3.5rem;
   }
-  .header-content {
+  .header_content {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
   }
   .search {
     width: 100%;
+  }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 100%;
+  }
+  .vocabulary_pic img {
+    width: 20rem;
   }
   .product-card_img {
     width: 100%;

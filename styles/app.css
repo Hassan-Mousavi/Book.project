@@ -80,9 +80,6 @@ body {
 #baner_1,
 #baner_2,
 #baner_3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 110rem;
   height: 20rem;
   background-color: rgb(216, 245, 110);
@@ -98,6 +95,11 @@ body {
 }
 #baner_3 {
   background-color: rgb(167, 59, 218);
+}
+.vocabulary_pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .vocabulary_pic img {
   width: 40rem;
