@@ -11,13 +11,13 @@
 .navbar {
   background-color: #114b5f;
 }
-.header_content {
+.header-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 3rem;
 }
-.header_content input {
+.header-content input {
   height: 5rem;
   width: 50rem;
   border-top-right-radius: 15px;
