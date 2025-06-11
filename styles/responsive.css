@@ -64,7 +64,7 @@
   #baner_1,
   #baner_2,
   #baner_3 {
-    width: 75rem;
+    width: 100%;
   }
   .product-slider {
     max-width: 75rem;
@@ -80,7 +80,16 @@
   .slider_btn--left {
     left: 5%;
   }
-
+  .levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .level {
+    margin: 0 auto;
+  }
   .entire-footer {
     flex-direction: column;
   }
@@ -117,13 +126,13 @@
   .vorod {
     margin-left: auto;
   } */
-  .header_content {
+  .header-content {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2rem;
     padding: 2rem;
   }
-  .header_content input {
+  .header-content input {
     width: 100%;
     order: 3;
   }

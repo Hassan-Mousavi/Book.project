@@ -65,7 +65,7 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .header_content {
+  .header-content {
     justify-content: space-between;
     gap: 0;
   }
