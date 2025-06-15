@@ -1,5 +1,7 @@
 {% extends '_base.html' %}
 {% load static %}
+{% load persian_translation_tags %}
+{% load humanize %}
 
 {% block title %}
     خانه
@@ -51,7 +53,7 @@
                                 <div class="product-card_detail">
                                     <h3 class="product-card_title">{{ book.title }}</h3>
                                     <div class="product-card_price">
-                                        <p>{{ book.price }} تومان</p>
+                                        <p>{{ book.price|translate_number|intcomma:False }} تومان</p>
                                         <span>
                         </span>
                                     </div>
@@ -129,7 +131,7 @@
                                 <div class="product-card_detail">
                                     <h3 class="product-card_title"> {{ book.title }}</h3>
                                     <div class="product-card_price">
-                                        <p>{{ book.price }} تومان</p>
+                                        <p>{{ book.price|translate_number|intcomma:False }} تومان</p>
                                         <span>
                     </span>
                                     </div>

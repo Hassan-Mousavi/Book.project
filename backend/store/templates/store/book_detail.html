@@ -2,6 +2,8 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% load jalali_tags %}
+{% load persian_translation_tags %}
+{% load humanize %}
 
 {% block title %} Detail Page {% endblock title %}
 
@@ -56,7 +58,7 @@
                                 </svg>
                             </div>
 
-                            <p>{{ book.price }}تومان </p>
+                            <p>{{ book.price|translate_number|intcomma:False }}تومان </p>
                         </div>
                         <div class="book_link-btn">
                             <a href="#" class="book_link">افزودن به سبد خرید</a>
@@ -160,7 +162,7 @@
                             <div class="card_detail">
                                 <h3 class="card_title">{{ book.title }}</h3>
                                 <div class="card_price">
-                                    <p>{{ book.price }} تومان</p>
+                                    <p>{{ book.price|translate_number|intcomma:False}}   تومان</p>
                                     <span>
                   </span>
                                 </div>
