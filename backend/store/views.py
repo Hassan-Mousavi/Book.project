@@ -1,7 +1,6 @@
-from lib2to3.fixes.fix_input import context
-
+from django.core.paginator import Paginator
 from django.views import generic
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .forms import CommentForm
 from .models import Book, Comment
@@ -52,10 +51,32 @@ def book_detail(request, pk):
     else:
         comment = CommentForm()
 
-
     return render(request, 'store/book_detail.html', {
         'book': book,
         'related_books': related_books,
         'comments': comments,
         'comment_form': comment,
     })
+
+
+class BookSearchView(generic.View):
+    def post(self, request):
+        searched = request.POST.get('searched', '').strip()
+        return redirect(f"{request.path}?searched={searched}")
+
+    def get(self, request):
+        searched = request.GET.get('searched', '').strip()
+        books = Book.objects.filter(title__icontains=searched) if searched else Book.objects.none()
+
+        paginator = Paginator(books, 4)
+        page_number = request.GET.get('page')
+        try:
+            page_obj = paginator.page(page_number)
+        except:
+            page_obj = paginator.page(1)
+
+        return render(request, "store/book_search.html", {
+            "books": page_obj,
+            "searched": searched,
+            "page_obj": page_obj,
+        })
