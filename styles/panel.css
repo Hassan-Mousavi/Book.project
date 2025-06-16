@@ -24,11 +24,11 @@ body {
 }
 .panel_header,
 .profile_img_header {
-  color: #a79277;
+  color: #114b5f;
 }
 .panel_caption,
 .profile_img_text {
-  color: #d1bb9e;
+  color: #114b5f;
   margin-bottom: 4rem;
 }
 .full_name {
@@ -45,7 +45,7 @@ body {
 .first_name label,
 .last_name label {
   margin-bottom: 1rem;
-  color: #a79277;
+  color: #114b5f;
 }
 .first_name input,
 .last_name input,
@@ -55,7 +55,7 @@ body {
   width: 100%;
   padding-right: 1rem;
   font-size: 2rem;
-  background-color: rgba(234, 216, 192, 0.361);
+  background-color: rgba(136, 212, 152, 0.3);
   border: none;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -70,16 +70,16 @@ body {
   margin-bottom: 2rem;
 }
 .user_email label {
-  color: #a79277;
+  color: #114b5f;
 }
 .user_password label {
   display: inline-block;
   margin-bottom: 3rem;
-  color: #a79277;
+  color: #114b5f;
 }
 .user_password p {
   margin-bottom: 1rem;
-  color: #a79277;
+  color: #114b5f;
 }
 .profile_img {
   padding: 2rem;
@@ -91,7 +91,7 @@ body {
 .user_image {
   width: 5rem;
   height: 5rem;
-  background-color: #d1bb9e;
+  background-color: rgba(136, 212, 152, 0.3);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -107,12 +107,12 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
   width: 30rem;
-  color: #d1bb9e;
+  color: #114b5f;
 }
 .upload_btn {
   padding: 1rem 2rem;
-  background-color: #a79277;
-  color: #ead8c0;
+  background-color: #1a936f;
+  color: #fff2e1;
   border: none;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -127,13 +127,13 @@ body {
   display: none;
 }
 .shaba_number_header {
-  color: #a79277;
+  color: #114b5f;
   margin-bottom: 2rem;
 }
 .shaba_number {
   width: 100%;
   height: 4rem;
-  background-color: rgba(234, 216, 192, 0.361);
+  background-color: rgba(136, 212, 152, 0.3);
   border: none;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -150,8 +150,8 @@ body {
 }
 .shaba_number_btn {
   padding: 1rem 2rem;
-  background-color: #a79277;
-  color: #ead8c0;
+  background-color: #1a936f;
+  color: #fff2e1;
   font-size: 2rem;
   font-weight: 700;
   cursor: pointer;

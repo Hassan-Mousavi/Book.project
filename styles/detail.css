@@ -7,20 +7,20 @@ html {
   font-size: 10px;
 }
 body {
-  color: #0e1935;
+  color: #114b5f;
   font-size: 2rem;
   background-color: #fff;
   font-family: "Times New Roman";
 }
 /* main */
 .details_container {
-  margin-top: 20rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin-bottom: 5rem;
 }
 .book_product {
-  box-shadow: 0 0 3px #a79277;
+  box-shadow: 0 0 3px #c6dabf;
 }
 .book_img {
   width: 100%;
@@ -81,9 +81,9 @@ body {
 .book_link {
   display: inline-block;
   text-decoration: none;
-  color: #a79277;
-  background-color: #fff2e1;
-  border: 2px solid #ead8c0;
+  color: #fff2e1;
+  background-color: #1a936f;
+  border: 2px solid #114b5f;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -101,9 +101,9 @@ body {
   margin-bottom: 2rem;
 }
 .book_link:hover {
-  background-color: #a79277;
-  color: #fff2e1;
-  border: 2px solid #a79277;
+  background-color: #fff2e1;
+  color: #1a936f;
+  border: 2px solid #1a936f;
 }
 .book_details {
   padding: 0 2rem;
@@ -159,11 +159,12 @@ body {
   margin-bottom: 5rem;
 }
 .relate_title {
+  text-align: center;
   margin-bottom: 2rem;
-  width: 16rem;
+  width: 100%;
   padding: 0.5rem 1rem;
-  background-color: #fff2e1;
-  color: #a79277;
+  background-color: #1a936f;
+  color: #c6dabf;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -181,7 +182,7 @@ body {
   flex: 0 0 auto;
   width: 25rem;
   height: auto;
-  box-shadow: 0 0 5px #ead8c0;
+  box-shadow: 0 0 5px #c6dabf;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -189,10 +190,10 @@ body {
   -o-transition: all 0.3s ease;
 }
 .card:hover {
-  background-color: rgba(255, 242, 225, 0.326);
+  background-color: rgba(136, 212, 152, 0.3);
 }
 .card:hover .card_icon {
-  background-color: #a79277;
+  background-color: #114b5f;
   fill: #fff2e1;
 }
 .card_img {
@@ -221,7 +222,8 @@ body {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  fill: #a79277;
+  background-color: #1a936f;
+  fill: #c6dabf;
   cursor: pointer;
 }
 .comment_part {
@@ -253,7 +255,7 @@ body {
 .writer_picture {
   width: 5rem;
   height: 5rem;
-  background-color: #d1bb9e;
+  background-color: rgba(136, 212, 152, 0.3);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -284,7 +286,7 @@ body {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  background-color: #a79277;
+  background-color: #1a936f;
   color: #fff2e1;
   border: none;
   border-radius: 15px;
@@ -296,5 +298,5 @@ body {
 }
 .comment_btn:hover {
   background-color: #fff2e1;
-  color: #a79277;
+  color: #1a936f;
 }

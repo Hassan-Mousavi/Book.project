@@ -17,7 +17,7 @@ body {
   margin-bottom: 5rem;
 }
 .sort_title {
-  color: #a79277;
+  color: #fff2e1;
 }
 .sort_products {
   display: flex;
@@ -25,8 +25,8 @@ body {
   justify-content: space-between;
   height: 10rem;
   width: 115rem;
-  background-color: #fff2e1;
-  box-shadow: 0 0 4px #a79277;
+  background-color: #1a936f;
+  box-shadow: 0 0 4px #88d498;
   margin: 0 auto;
   margin-top: 2rem;
   padding: 0 2.5rem;
@@ -43,7 +43,7 @@ body {
 }
 .sort_list a {
   text-decoration: none;
-  color: #a79277;
+  color: #fff2e1;
   font-weight: 700;
   margin-right: 2rem;
 }
@@ -61,8 +61,8 @@ body {
   -o-border-radius: 15px;
 }
 .sort_item:hover {
-  background-color: #a79277;
-  color: #fff2e1;
+  background-color: #fff2e1;
+  color: #1a936f;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -77,7 +77,7 @@ body {
   align-items: center;
   width: 25rem;
   height: 5rem;
-  box-shadow: 0 0 5px #a79277;
+  box-shadow: 0 0 5px #88d498;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -89,7 +89,7 @@ body {
   width: 3.5rem;
   height: 3.5rem;
   margin-left: 1rem;
-  fill: #a79277;
+  fill: #fff2e1;
 }
 .sort_input {
   border: none;
@@ -97,10 +97,12 @@ body {
   height: 100%;
   outline: none;
   font-size: 1.8rem;
-  background-color: #fff2e1;
+  background-color: #1a936f;
+  color: #fff2e1;
 }
 .sort_input::placeholder {
   font-size: 2rem;
+  color: #fff2e1;
 }
 /* card */
 .products {
@@ -112,7 +114,8 @@ body {
   justify-content: space-evenly;
 }
 .card {
-  box-shadow: 0 0 5px #a79277;
+  /* box-shadow: 0 0 5px #a79277; */
+  border: 2px solid #88d498;
   border-radius: 15px;
   width: 25rem;
   height: auto;
@@ -127,11 +130,11 @@ body {
   -o-transition: all 0.3s ease;
 }
 .card:hover {
-  background-color: rgba(255, 242, 225, 0.326);
+  background-color: rgba(136, 212, 152, 0.3);
 }
 .card:hover .card_icon {
-  background-color: #a79277;
-  fill: #fff2e1;
+  background-color: #114b5f;
+  fill: #c6dabf;
 }
 .card_img {
   width: 100%;
@@ -141,14 +144,14 @@ body {
 .card_title {
   text-align: center;
   margin-bottom: 1rem;
-  color: #a79277;
+  color: #114b5f;
 }
 .card_price {
   margin-bottom: 1rem;
   margin-right: 2.5rem;
 }
 .card_price p {
-  color: #a79277;
+  color: #114b5f;
   font-weight: 700;
 }
 .card_price del {
@@ -166,9 +169,9 @@ body {
 .card_icon {
   width: 4rem;
   height: 4rem;
-  fill: #a79277;
+  fill: #c6dabf;
   cursor: pointer;
-  background-color: #fff2e1;
+  background-color: #1a936f;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
