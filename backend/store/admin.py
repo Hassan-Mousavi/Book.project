@@ -23,7 +23,7 @@ class ProducerAdmin(admin.ModelAdmin):
 class BookAdmin(admin.ModelAdmin):
     list_display = ['title', 'category', 'inventory', 'price', 'datatime_created']
     list_per_page = 10
-    list_editable = ['inventory', 'price']
+    list_editable = ['inventory', 'price', 'category']
     ordering = ['inventory']
     search_fields = ['title__istartswith']
 

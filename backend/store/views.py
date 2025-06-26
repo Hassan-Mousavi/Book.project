@@ -80,3 +80,26 @@ class BookSearchView(generic.View):
             "searched": searched,
             "page_obj": page_obj,
         })
+
+# def book_category(request):
+#     category_title = request.GET.get('name')
+#     books = Book.objects.filter(category__title=category_title).order_by('-datatime_created')
+#     return render (request, "store/book_category.html", {"books": books})
+
+class Book_Category(generic.ListView):
+    paginate_by = 4
+    template_name = 'store/book_category.html'
+    context_object_name = 'books'
+
+    def get_queryset(self):
+        category_title = self.request.GET.get('name')
+        sort = self.request.GET.get('sort')
+        queryset = Book.objects.filter(category__title=category_title).order_by('-datatime_created')
+        if sort == 'newest':
+            return queryset.order_by('-datatime_created')
+        elif sort == 'cheapest':
+            return queryset.order_by('price')
+        elif sort == 'expensive':
+            return queryset.order_by('-price')
+        else:
+            return queryset.order_by('-datatime_created')

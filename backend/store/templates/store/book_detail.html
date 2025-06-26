@@ -68,7 +68,7 @@
                         <h2 class="book_name">{{ book.title }}</h2>
                         <hr/>
                         <h3 class="book_title">تولید کننده:</h3>
-                        <p class="book_producer-name">نام انتشارات</p>
+                        <p class="book_producer-name">{{ book.producer }}</p>
                         <h3 class="book_title-details">مشخصات:</h3>
                         <ul class="details_list">
                             <li class="details_item">
@@ -80,8 +80,8 @@
                                 <span>{{ book.translator }}</span>
                             </li>
                             <li class="details_item">
-                                ژانر:
-                                <span>{{ book.category }}</span>
+                                سطح:
+                                <span>{{ book.category.title }}</span>
                             </li>
                             <li class="details_item">
                                 جلد:

@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 class Category(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, blank=False, null=False)
     description = models.CharField(max_length=500, blank=True, null=True)
 
     def __str__(self):

@@ -46,7 +46,7 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .header_content {
+  .header-content {
     justify-content: space-evenly;
   }
   .search {
@@ -86,7 +86,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .header_content {
+  .header-content {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2rem;

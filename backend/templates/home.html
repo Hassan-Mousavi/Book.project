@@ -14,27 +14,47 @@
             <div class="container">
                 <h2 class="banners-title">جشنواره های هیجان انگیز</h2>
                 <div class="banners">
-                    <a href="#">
+                    <div href="#" class="vocabulary_pic" id="baner_1">
                         <img
-                                class="mini-banner"
-                                src="{% static 'image/img/mini-banner_1.png' %}"
-                                alt="pic-1"
+                                src={% static "image/img/7-tips-to-learn-english-quickly-and-easily.jpg" %}
+                                        alt="vocabulary-picture"
                         />
+                        <div class="vocabulary_caption">
+                            <h2 class="vocabulary_title">کتاب لغت از همه انتشارات</h2>
+                            <a href="#" class="buy_vocabulary">مشاهده و خرید</a>
+                        </div>
+                    </div>
+                    <div href="#" class="vocabulary_pic" id="baner_2">
+                        <img src={% static "image/img/English.jpg" %} alt="vocabulary-picture"/>
+                        <div class="vocabulary_caption">
+                            <h2 class="vocabulary_title">کتاب لغت از همه انتشارات</h2>
+                            <a href="#" class="buy_vocabulary">مشاهده و خرید</a>
+                        </div>
+                    </div>
+                    <div href="#" class="vocabulary_pic" id="baner_3">
+                        <img
+                                src={% static "image/img/7-tips-to-learn-english-quickly-and-easily.jpg" %}
+                                        alt="vocabulary-picture"
+                        />
+                        <div class="vocabulary_caption">
+                            <h2 class="vocabulary_title">مجموعه کتابهای آیلتس</h2>
+                            <a href="#" class="buy_vocabulary">مشاهده و خرید</a>
+                        </div>
+                    </div>
+                    <!-- <a href="#">
+                      <img
+                        class="mini-banner"
+                        src="images/img/banner-pic_2.png"
+                        alt="pic-2"
+                      />
                     </a>
                     <a href="#">
-                        <img
-                                class="mini-banner"
-                                src="{% static 'image/img/banner-pic_2.png' %}"
-                                alt="pic-2"
-                        />
-                    </a>
-                    <a href="#">
-                        <img
-                                class="mini-banner"
-                                src="{% static 'image/img/banner-pic_3.png' %}"
-                                alt="pic-3"
-                        />
-                    </a>
+                      <img
+                        class="mini-banner"
+                        src="images/img/banner-pic_3.png"
+                        alt="pic-3"
+                      />
+                    </a> -->
                 </div>
             </div>
         </section>
@@ -116,6 +136,53 @@
                 </div>
             </div>
         </section>
+        <section class="english_levels">
+            <div class="container">
+                <h2 class="level-title">سطح بندی کتاب های انگلیسی فست زبان</h2>
+                <div class="levels">
+                    <a href="{% url 'category' %}?name=IELTS" class="level" id="level_1">
+                        <p class="level_title">سطح<strong> آیلتس</strong>(IELTS)</p>
+                        <img
+                                src={% static "image/img/c u r i o u s.jpg" %}
+                                alt="itlts level"
+                                class="level_image"
+                        />
+                    </a>
+                    <a href="{% url 'category' %}?name=Advanced" class="level" id="level_2">
+                        <p class="level_title">سطح<strong> پیشرفته</strong></p>
+                        <img
+                                src={% static "image/img/c u r i o u s.jpg" %}
+                                alt="itlts level"
+                                class="level_image"
+                        />
+                    </a>
+                    <a href="{% url 'category' %}?name=Intermediate" class="level" id="level_3">
+                        <p class="level_title">سطح<strong> متوسط</strong></p>
+                        <img
+                                src={% static "image/img/c u r i o u s.jpg" %}
+                                alt="itlts level"
+                                class="level_image"
+                        />
+                    </a>
+                    <a href="{% url 'category' %}?name=Elementary" class="level" id="level_4">
+                        <p class="level_title">سطح<strong> مبتدی</strong></p>
+                        <img
+                                src={% static "image/img/c u r i o u s.jpg" %}
+                                alt="itlts level"
+                                class="level_image"
+                        />
+                    </a>
+                    <a href="{% url 'category' %}?name=Kids" class="level" id="level_5">
+                        <p class="level_title">سطح<strong> کودکان</strong></p>
+                        <img
+                                src={% static "image/img/c u r i o u s.jpg" %}
+                                alt="itlts level"
+                                class="level_image"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
         <section class="most-sale">
             <div class="container">
                 <h2 class="most-sale_title">ارزان ترین ها</h2>
@@ -193,6 +260,7 @@
                 </div>
             </div>
         </section>
+
     </main>
 
 {% endblock content %}

@@ -39,12 +39,17 @@
   }
 }
 @media screen and (max-width: 1200px) {
-  .header-content {
+  .header_content {
     justify-content: space-between;
+  }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 90rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .header-content input {
+  .header_content input {
     width: 49rem;
   }
   .hero-details {
@@ -55,6 +60,11 @@
   }
   .menu {
     justify-content: space-evenly;
+  }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 100%;
   }
   .product-slider {
     max-width: 75rem;
@@ -70,7 +80,16 @@
   .slider_btn--left {
     left: 5%;
   }
-
+  .levels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .level {
+    margin: 0 auto;
+  }
   .entire-footer {
     flex-direction: column;
   }
@@ -126,7 +145,7 @@
   .nav {
     position: absolute;
     z-index: 1000;
-    top: 90px;
+    top: 85px;
     width: 100%;
   }
   .nav-list {
@@ -140,16 +159,8 @@
   .nav_toggle {
     display: block;
   }
-
-  /* .mobile-menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-  } */
   .menu {
-    backdrop-filter: blur(3px);
+    background-color: #114b5f;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -164,7 +175,7 @@
   }
   .menu--open {
     height: 30rem;
-    border: 1px solid #fff2e1;
+    border: 1px solid #f3e9d2;
   }
   .menu__item {
     margin-right: 0;
@@ -189,6 +200,11 @@
   .banners {
     flex-direction: column;
     gap: 2rem;
+  }
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 100%;
   }
   .product-slider {
     max-width: 76rem;
@@ -220,7 +236,14 @@
   .slide_1 {
     width: 50%;
   }
-
+  .levels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .level {
+    margin: 0 auto;
+  }
   .entire-footer {
     flex-direction: column;
   }
@@ -267,7 +290,7 @@
   .hero-title {
     font-size: 3.5rem;
   }
-  .header-content {
+  .header_content {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
@@ -275,8 +298,13 @@
   .search {
     width: 100%;
   }
-  .nav {
-    top: 79.5px;
+  #baner_1,
+  #baner_2,
+  #baner_3 {
+    width: 100%;
+  }
+  .vocabulary_pic img {
+    width: 20rem;
   }
   .product-card_img {
     width: 100%;
