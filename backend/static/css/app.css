@@ -348,3 +348,59 @@ body {
 .level_image {
   height: 25rem;
 }
+/* =================================== */
+/* استایل بخش خوش‌آمدگویی و خروج کاربر */
+/* =================================== */
+
+/* کانتینر اصلی */
+.vorod-logout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem; /* فاصله بین متن و دکمه (15px) */
+
+    /* استایل ظاهری کادر */
+    padding: 0.8rem 1.5rem; /* (8px بالا/پایین, 15px چپ/راست) */
+    border-radius: 5rem; /* (50px) برای ظاهر کپسولی */
+    background-color: rgba(255, 255, 255, 0.1); /* پس‌زمینه شیشه‌ای */
+}
+
+/* متن خوش‌آمدگویی */
+.vorod-logout p {
+    margin: 0;
+    color: white; /* رنگ سفید برای خوانایی روی هدر تیره */
+    font-size: 1.6rem; /* (16px) کمی بزرگتر برای خوانایی بهتر */
+    font-weight: bold;
+    white-space: nowrap; /* جلوگیری از شکستن متن در دو خط */
+}
+
+/* دکمه خروج */
+.vorod-logout a.vorod-logout_text {
+    /* استفاده از فونت دکمه‌های اصلی سایت */
+    font-family: "b homa", "Times New Roman", sans-serif;
+    font-size: 1.5rem; /* (15px) */
+    font-weight: bold;
+    color: white;
+
+    /* استایل دکمه */
+    text-decoration: none;
+    background-color: #e74c3c; /* رنگ قرمز برای تاکید */
+    padding: 0.6rem 2rem; /* (6px بالا/پایین, 20px چپ/راست) */
+    border-radius: 2rem; /* (20px) */
+    border: 1px solid #c0392b;
+    white-space: nowrap; /* جلوگیری از شکستن کلمه "خروج" */
+
+    /* انیمیشن نرم */
+    transition: all 0.2s ease-in-out;
+}
+
+/* افکت هاور برای دکمه خروج */
+.vorod-logout a.vorod-logout_text:hover {
+    background-color: #c0392b; /* تیره‌تر شدن رنگ */
+    cursor: pointer;
+    transform: translateY(-2px); /* کمی حرکت به سمت بالا */
+}
+
+.vorod-logout a.vorod-logout_text:active {
+    transform: scale(0.98); /* افکت کلیک شدن */
+}
