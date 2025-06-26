@@ -21,7 +21,7 @@ body {
 .hero-img {
   position: relative;
   background: linear-gradient(90deg, #114b5f, rgba(198, 218, 191, 0.4)),
-    url(/images/img/beautiful-arrangement-different-books.jpg);
+    url(../image/img/beautiful-arrangement-different-books.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 50rem;
