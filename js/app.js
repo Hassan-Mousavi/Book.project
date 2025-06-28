@@ -52,8 +52,10 @@ document.addEventListener("keydown", function (e) {
 // second slider
 const slides_1 = document.querySelectorAll(".slide_1");
 slides_1.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+
 const btnRight_1 = document.querySelector(".slider_btn--right");
 const btnLeft_1 = document.querySelector(".slider_btn--left");
+
 const maxSlides_1 = slides_1.length;
 const goToSlide_1 = function (slide) {
   slides_1.forEach(
